@@ -12,13 +12,14 @@ templateClass: tmpl-home
         <li{% if page.url == post.url %} aria-current="page"{% endif %}>
         <div class="thing no-image">
          <div class="text">
-           <h2>{{ post.data.title }}</h2>
+           <h2>{{ post.data.title }}<p class="chip {{post.data.chiptype}}">{{post.data.status}}</p></h2>
            <p class="subtle"> {{ post.data.description }}</p>
           <a href="{{ post.data.link }}"></a>
         </div>
       </div>
-      </li> 
-  {%- endfor -%}
-    </ul>
+      </li>
+        {%- endfor -%} 
+        <hr></hr>
+      <li><a href="/"><-Back Home</a></li>
   </div>
 </div>
