@@ -7,7 +7,7 @@ tags:
 layout: layouts/post.njk
 ---
 
-# Thanks for looking
+## Thanks for looking
 
 I'm Marcs, a digital and physical product designer working my way through every type of product I can think of.
 
