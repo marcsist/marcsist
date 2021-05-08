@@ -1,7 +1,7 @@
 {
-  "name": "make-software-better",
+  "name": "marcsist",
   "version": "0.0.1",
-  "description": "A digital product design portfolio built with Eleventy.",
+  "description": "Bas as hell, and a designer.",
   "scripts": {
     "start": "eleventy --serve",
     "build": "NODE_ENV=production eleventy"
@@ -22,7 +22,7 @@
     "node": "12"
   },
   "repository": {
-    "url": "https://glitch.com/edit/#!/glitch-hello-eleventy"
+    "url": "https://github.com/marcsist/marcsist"
   },
   "glitch": {
     "projectType": "generated_static"

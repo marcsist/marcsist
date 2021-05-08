@@ -46,10 +46,16 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.setBrowserSyncConfig({ ghostMode: false });
   
   /*
-  From: https://github.com/11ty/eleventy/issues/529#issuecomment-568257426 
-  
+  From: https://github.com/11ty/eleventy/issues/529#issuecomment-568257426   
   Adds {{ prevPost.url }} {{ prevPost.data.title }}, etc, to our njks templates
   */
+  
+/*Limit Filter: Copy paste from Jérôme Coupé*/
+  eleventyConfig.addNunjucksFilter("limit", function(array, limit) {
+    return array.slice(0, limit);
+  });
+  
+
   eleventyConfig.addCollection("posts", function(collection) {
     const coll = collection.getFilteredByTag("posts");
 
