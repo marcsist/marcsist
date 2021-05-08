@@ -8,21 +8,31 @@
     <link rel="stylesheet" type="text/css" href="/public/style.css" />
     {% seo "" %}
   </head>
+  <header>
+  <nav>
+    <ul>      
+      <li>
+        <a href="/">Home</a>
+      </li>
+      <li>
+        <a href="/things">Things</a>
+      </li>
+      <li>
+        <a href="/notes">Notes</a>
+      </li>
+      <li>
+        <a href="/about">About</a>
+      </li>
+    </ul>
+  </nav>
+  <h3>
+    <b>marcsist</b> lots of <a href="https://read.cv/marcs">experience</a> at design
+  </h3>
+</header>
   <body>
   <main>
   
     {{ content | safe }}
-
-      <footer class="footer">
-        <div class="links">
-          <a href="/">Home</a>
-          <span class="divider">|</span>
-          <a href="/posts">Posts</a>
-          <span class="divider">|</span>
-          <a href="/about">About</a>
-        </div>
-
-      </footer>
     
   </main>
    
