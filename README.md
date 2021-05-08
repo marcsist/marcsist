@@ -1,7 +1,4 @@
 # Call me Marcs!
 
-[Eleventy](https://www.11ty.dev/) is a simple static site generator. That means you get all the power of a server-side framework but it builds plain HTML files. I'm using Eleventy as an engine for my personal website.
-
-## I built this with Glitch!
-
-[Glitch](https://glitch.com) is a friendly community where millions of people come together to build web apps and websites.
+I'm a product designer and builder working my way through every type of thing I can think of. Right now I'm working in Germany on a leading l10n and i18n tools for software teams.
+This 11ty site is a little learning playground for me. I'll try to collect a few notes and things that I think might be interesting to other people.
