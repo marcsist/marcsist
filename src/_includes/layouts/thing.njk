@@ -1,0 +1,30 @@
+---
+layout: layouts/base.njk
+templateClass: tmpl-home
+---
+
+<div class="wrapper post">
+  <div>
+    <h1 class='postTitle'>{{title}}</h1>
+    <p>
+      {{description}}
+    </p>
+    <a href="{{url}}">Link-></a><br>
+
+    {{ content | safe }}
+    <div class="controls">
+    {% if prevPost.url %}
+      <p>
+        <strong>Previous thing</strong>: 
+        <a class="previous" href="{{ prevPost.url }}">{{ prevPost.data.title }}</a>
+      </p>
+    {% endif %}
+    {% if nextPost.url %}
+      <p>
+        <strong>Next thing</strong>: 
+        <a class="next" href="{{ nextPost.url }}">{{ nextPost.data.title }}</a>
+      </p>
+    </div>
+    {% endif %}
+  </div>
+</div>

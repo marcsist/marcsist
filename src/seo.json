@@ -1,0 +1,7 @@
+{
+  "glitch-help-instructions": "For a custom domain, change the 'url' parameter from 'glitch-default' to your domain _without_ a traling slash, like 'https://www.example.com'",
+  "title": "Marcsist - a product designer",
+  "description": "Marcs Wilkinson is making digital products and other stuff, too.",
+  "url": "https://11ty.marcsist.com",
+  "image": "https://cdn.glitch.com/523e47c3-e7b6-4b26-9524-f0c51e82180a%2Fmarcs%20portfolio.png?v=1620473992737"
+}
