@@ -1,5 +1,5 @@
 ---
-title: I've just taken a note!
+title: Taking note
 description: This is the first note - an introduction, hopes and dreams.
 date: 2021-04-08
 tags:
@@ -11,8 +11,7 @@ layout: layouts/post.njk
 
 I'm Marcs, a digital and physical product designer working my way through every type of product I can think of.
 
-Right now I'm working for Phrase, an l10n and i18n company based in Hamburg, Germany. Since I have a job, I figured it was a good a time as any to take down my old portfolio and try something new.  
-  
+Right now I'm working for Phrase, an l10n and i18n company based in Hamburg, Germany. Since I have a job, I figured it was a good a time as any to take down my old portfolio and try something new.
 
 ## Rolling my own
 

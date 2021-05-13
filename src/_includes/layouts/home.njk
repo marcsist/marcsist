@@ -7,26 +7,10 @@ templateClass: tmpl-home
   <div class="content">
     {{ content | safe }}
     
-    <section id="things">
-      <h3><b>Things</b></h3>
+
       
-      <ul class="no-bullet">
-        {%- for post in collections.things | reverse -%}
-        <li{% if page.url == post.url %} aria-current="page"{% endif %}>
-        <div class="thing no-image">
-         <div class="text">
-           <h2>{{ post.data.title }}<p class="chip {{post.data.chiptype}}">{{post.data.status}}</p></h2>
-           <p class="subtle"> {{ post.data.description }}</p>
-          <a href="{{ post.data.link }}"></a>
-        </div>
-      </div>
-      </li> 
-      {%- endfor -%}
-    </ul>
-    </section>
-    
     <section id="notes">
-      <h3><b>Notes</b></h3>
+      <h2><b>Notes</b></h2>
       <ul class="no-bullet">
         {%- for post in collections.posts | reverse -%}
           <li{% if page.url == post.url %} aria-current="page"{% endif %}>{{ post.data.page.date | htmlDateString }} — <a href='{{ post.url }}'>{{ post.data.title }}</a></li>
@@ -34,6 +18,24 @@ templateClass: tmpl-home
         <li><a href="/notes">View all notes</a></li>
       </ul>
     </section>
+    <section id="things">
+      <h2><b>Things</b></h2>
+        <ul class="no-bullet">
+          {%- for post in collections.things | reverse -%}
+          <li{% if page.url == post.url %} aria-current="page"{% endif %}>
+                  <div class="thing no-image">
+         <div class="text">
+           <h3>{{ post.data.title }}<p class="chip {{post.data.chiptype}}">{{post.data.status}}</p></h3>
+           <p class="subtle"> {{ post.data.description }} 
+           <a href="{{ post.data.link }}">-> Link</a></p>
+         </div>
+         <a href="{{ post.url }}" class="fullcard">{{ post.data.title }}</a>
+        </div>
+        </li> 
+        {%- endfor -%}
+      </ul>
+    </section>
+    
 
   </div>
 </div>

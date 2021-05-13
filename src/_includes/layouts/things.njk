@@ -6,17 +6,18 @@ templateClass: tmpl-home
 <div class="wrapper home">
   <div class="content">
     {{ content | safe }}
-        <section id="things">
+      <section id="things">
       <ul class="no-bullet">
-        {%- for post in collections.things -%}
+        {%- for post in collections.things  | reverse -%}
         <li{% if page.url == post.url %} aria-current="page"{% endif %}>
         <div class="thing no-image">
          <div class="text">
-           <h2>{{ post.data.title }}<p class="chip {{post.data.chiptype}}">{{post.data.status}}</p></h2>
-           <p class="subtle"> {{ post.data.description }}</p>
-          <a href="{{ post.data.link }}"></a>
+           <h3>{{ post.data.title }}<p class="chip {{post.data.chiptype}}">{{post.data.status}}</p></h3>
+           <p class="subtle"> {{ post.data.description }} 
+           <a href="{{ post.data.link }}">-> Link</a></p>
+         </div>
+         <a href="{{ post.url }}" class="fullcard">{{ post.data.title }}</a>
         </div>
-      </div>
       </li>
         {%- endfor -%} 
       <li><a href="/"><-Back Home</a></li>
