@@ -5,12 +5,13 @@ templateClass: tmpl-home
 
 <div class="wrapper post">
   <div>
+    <section id="hero">
     <h1 class='postTitle'>{{title}}</h1>
-    <p>
-      {{description}}
-    </p>
-    <a href="{{url}}">Link-></a><br>
-
+    <h3>
+      {{description}}<br>
+    <a href="{{url}}">Link-></a>
+      </h3>
+    </section>
     {{ content | safe }}
     <div class="controls">
     {% if prevPost.url %}

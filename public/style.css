@@ -269,17 +269,23 @@ a:hover {
   place-items: normal;
 }
 
+.hero h2 {
+  margin-top: 0!important;
+}
+
 .post h2 {
   font-weight: 600;
   Font-size: 1.2em;
   Margin-top: 2em;
 }
+
 .postTitle {
   font-size: 2rem;
   color: var(--color-primary);
-  line-height: 1.1;
-  margin-bottom: 2rem;
+  line-height: 1.5;
+  margin-bottom: 1rem;
 }
+
 .controls {
   margin: 3rem 0 2rem;
 }
