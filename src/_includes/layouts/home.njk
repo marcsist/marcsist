@@ -18,23 +18,7 @@ templateClass: tmpl-home
         <li><a href="/notes">View all notes</a></li>
       </ul>
     </section>
-    <section id="things">
-      <h2><b>Things</b></h2>
-        <ul class="no-bullet">
-          {%- for post in collections.things | reverse -%}
-          <li{% if page.url == post.url %} aria-current="page"{% endif %}>
-                  <div class="thing no-image">
-         <div class="text">
-           <h3>{{ post.data.title }}<p class="chip {{post.data.chiptype}}">{{post.data.status}}</p></h3>
-           <p class="subtle"> {{ post.data.description }} 
-           <a href="{{ post.data.link }}">Link-></a></p>
-         </div>
-         <a href="{{ post.url }}" class="fullcard">{{ post.data.title }}</a>
-        </div>
-        </li> 
-        {%- endfor -%}
-      </ul>
-    </section>
+    {% include 'layouts/blocks/things.njk' %}
     
 
   </div>

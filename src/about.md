@@ -9,7 +9,7 @@ layout: layouts/page.njk
 
 I user-center today's problems and complex challenges into solutions of the near-future. Right now I'm working to improve the experience of #L10N and #I18N for software, and crafting odds and open-source ends. 
 
-> * **🦜 Product Designer** at [Phrase](https://www.phrase.com)(We're hiring!)
+> * **🦜 Product Designer** at [Phrase](https://www.phrase.com) (We're hiring!)
 > * **🧵 Making what I can** when I can at [Les Original](https://www.github.com/les-original/)
 > * **🚵‍♂️ Bicycle camper** and **old newschool skier**  
 
