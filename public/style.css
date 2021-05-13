@@ -153,11 +153,12 @@ a:hover.fullcard {
 
 /* Typography */
 p {
-  margin: 0 0 1em 0;
-  font-size: 1em;
+  margin: 0 0 0.75em 0;
+  font-size: 1rem;
   font-weight: 400;
   color: var(--color-text-main);
 }
+
 
 
 p .hero {
@@ -175,7 +176,7 @@ h1 {
 }
 
 h2 {
-	font-weight: 400;
+	font-weight: 600;
 }
 
 h3 {
@@ -229,8 +230,8 @@ ul.no-bullet {
 }
 
 .primary {
-	color: #0e6bc2;
-	background-color: #7c99ce4d;
+	color: var(--color-primary);
+	background-color: #7c99ce1f;
 }
 
 /* Link styles */
@@ -246,6 +247,15 @@ a:hover {
   border-bottom: 4px solid var(--color-primary);
 }
 
+blockquote {
+  background-color: #7c99ce1f;
+  padding: 16px 16px 4px 16px;
+  border-left: 4px var(--color-primary) solid;
+ /* border-bottom: 4px var(--color-primary) solid; */
+  box-shadow: 0 0 0 1px var(--color-primary);
+  margin: 1em auto 1.6em 0;
+  border-radius: 16px;
+}
 
 /* Title style adjustments */
 .title-lg {
@@ -274,7 +284,6 @@ a:hover {
 }
 
 .post h2 {
-  font-weight: 600;
   Font-size: 1.2em;
   Margin-top: 2em;
 }

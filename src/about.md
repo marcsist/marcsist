@@ -3,16 +3,15 @@ layout: layouts/page.njk
 ---
 
 <section id="hero">
-  <h1>About</h1>
-  <p></p>
+  <h1>Call me Marcs</h1>
+  <h2>Creative technologist from Canada living in Germany, designing and managing products for humans doing things in new ways.</h2>
 </section>
 
-**I'm Marcs, a creative product builder from Canada living in Germany. I design and manage products for humans doing things in new ways. I user-center today's problems and complex challenges into solutions of the near-future.**
+I user-center today's problems and complex challenges into solutions of the near-future. Right now I'm working to improve the experience of #L10N and #I18N for software, and crafting odds and open-source ends. 
 
-
-* **🦜 Product Designer** at [Phrase](https://www.phrase.com)(We're hiring!)
-* **🧵 Making what I can** when I can at [Les Original](https://www.github.com/les-original/)
-* **🚵‍♂️ Bicycle camper** and **old newschool skier**  
+> * **🦜 Product Designer** at [Phrase](https://www.phrase.com)(We're hiring!)
+> * **🧵 Making what I can** when I can at [Les Original](https://www.github.com/les-original/)
+> * **🚵‍♂️ Bicycle camper** and **old newschool skier**  
 
 I've worked alongside researchers and engineers to turn research into real products. As a designer I work at the intersection of technology and tangibles, resolving new product experiences and interactions. More recently I've cut my teeth as a product leader making B2B SaaS for the enterprise.
 

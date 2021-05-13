@@ -9,7 +9,7 @@ templateClass: tmpl-home
     <h1 class='postTitle'>{{title}}</h1>
     <h3>
       {{description}}<br>
-    <a href="{{url}}">Link-></a>
+    <a href="{{ post.data.link }}">Link-></a>
       </h3>
     </section>
     {{ content | safe }}
