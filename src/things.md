@@ -2,4 +2,7 @@
 layout: layouts/things.njk
 ---
 
-# Things
+<section id="hero">
+  <h1>Things</h1>
+  <p></p>
+</section>

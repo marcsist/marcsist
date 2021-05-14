@@ -2,4 +2,7 @@
 layout: layouts/posts.njk
 ---
 
-# Notes
+<section id="hero">
+  <h1>Notes</h1>
+  <p></p>
+</section>
