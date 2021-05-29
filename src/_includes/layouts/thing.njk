@@ -1,13 +1,17 @@
 ---
 layout: layouts/base.njk
 templateClass: tmpl-home
+eleventyNavigation:
+  parent: Things
 ---
 
 <div class="wrapper post">
   <div>
     <section id="hero">
+
       <h1 class='postTitle'>{{title}}</h1>
-      <h3>{{description}}<br>
+      <p>{{description}}</p>
+        <h3>
         <a href="{{link}}">link-></a>
       </h3>
     </section>

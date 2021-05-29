@@ -9,3 +9,7 @@ tags:
   - things
 layout: layouts/thing.njk
 ---
+
+[Notion->](https://www.notion.so/marcsist/MYO-Notions-6e98b11a9ec54a45b88b3f215b6a5233/)  
+[GitHub->](https://www.github.com/les-original/myo-notions)  
+[Prusaprinters.org->](https://www.prusaprinters.org/social/100188-les-original/collections/45345)

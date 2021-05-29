@@ -1,5 +1,8 @@
 ---
 layout: layouts/page.njk
+eleventyNavigation:
+  key: About
+  order: 4
 ---
 
 <section id="hero">

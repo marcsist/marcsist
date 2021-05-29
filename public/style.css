@@ -165,7 +165,7 @@ p .hero {
 
 h1 {
   font-size: 2rem;
-  font-weight: 600;
+  font-weight: 700;
   margin: 0;
 }
 
@@ -243,9 +243,17 @@ a:hover {
 
 blockquote {
   background-color: #e3edf2;
-  padding: 8px 16px 0px 16px;
+  padding: .5em 1em 0.5em 1em;
   border-left: 8px var(--color-primary) solid;
   margin: 1em 0 1.6em 0;
+}
+
+blockquote li:last-child {
+  margin-bottom: 0;
+}
+
+blockquote p {
+  margin-bottom: 0;
 }
 
 .callout blockquote {
@@ -277,6 +285,20 @@ blockquote {
   place-items: normal;
 }
 
+.post li {
+  display: list-item;
+  list-style: circle;
+}  
+
+.post ul ul{
+  padding-left: 16px;
+  padding-top: .5em;
+}
+
+.post li li {
+  margin-bottom: 0.2em;
+}
+
 .hero h2 {
   margin-top: 0 !important;
 }
@@ -290,7 +312,7 @@ blockquote {
   font-size: 2rem;
   color: var(--color-primary);
   line-height: 1.5;
-  margin-bottom: 1rem;
+  
 }
 
 .controls {
@@ -302,6 +324,9 @@ blockquote {
   margin-left: 0.75em;
   padding-top: 2em;
   text-transform: uppercase;
+}
+
+blockquote a {
 }
 
 footer {
