@@ -1,7 +1,7 @@
 ---
 title: Taking note
 description: This is the first note - an introduction, hopes and dreams.
-date: 2021-04-08
+date: 2021-05-08
 tags:
   - posts
 layout: layouts/post.njk

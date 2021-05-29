@@ -1,5 +1,6 @@
 const { DateTime } = require("luxon");
 const pluginSEO = require("eleventy-plugin-seo");
+const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
 
 module.exports = function(eleventyConfig) {
   eleventyConfig.setTemplateFormats([
@@ -17,6 +18,7 @@ module.exports = function(eleventyConfig) {
     "woff2"
   ]);
   eleventyConfig.addPassthroughCopy("public");
+  eleventyConfig.addPlugin(eleventyNavigationPlugin);
   
   /*
   From: https://github.com/artstorm/eleventy-plugin-seo

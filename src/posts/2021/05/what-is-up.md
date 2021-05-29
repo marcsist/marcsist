@@ -1,7 +1,7 @@
 ---
 title: What is up
 description: A deeper introduction and signal of commitment.
-date: 2021-04-09
+date: 2021-05-09
 tags:
   - posts
 layout: layouts/post.njk
