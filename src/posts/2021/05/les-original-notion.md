@@ -1,6 +1,7 @@
 ---
 title: Making a website Les Original
 description: Unlearning websites to make something that suits me
+date: 2021-05-21
 eleventyNavigation:
   key: Les Original
   parent: Notes
