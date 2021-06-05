@@ -4,6 +4,7 @@ dependencies:
   tailwindcss: 2.1.2
 devDependencies:
   '@11ty/eleventy': 0.11.1
+  '@11ty/eleventy-navigation': 0.2.0
   autoprefixer: 10.2.5
   concurrently: 6.1.0
   postcss-cli: 8.3.1
@@ -12,6 +13,14 @@ packages:
     dev: true
     resolution:
       integrity: sha512-2FWYlkphQ/83MG7b9qqBJfJJ0K9zupNz/6n4EdDuNLw6hQHGp4Sp4UMDRyBvA/xCTYDBaPSuSjHuu45tSujegg==
+  /@11ty/eleventy-navigation/0.2.0:
+    dependencies:
+      dependency-graph: 0.11.0
+    dev: true
+    peerDependencies:
+      '@11ty/eleventy': '>=0.7.0'
+    resolution:
+      integrity: sha512-mkFoNpL32FosMTuZwxcY3KXVVYLRt7zBqVWP9X+0GMufnRNGpLZd+BYwD0vmYHLAxz1ol/RLlL2Hmkgp/YJ4TQ==
   /@11ty/eleventy/0.11.1:
     dependencies:
       '@11ty/dependency-tree': 1.0.0
@@ -863,6 +872,12 @@ packages:
       node: '>= 0.6'
     resolution:
       integrity: sha1-m81S4UwJd2PnSbJ0xDRu0uVgtak=
+  /dependency-graph/0.11.0:
+    dev: true
+    engines:
+      node: '>= 0.6.0'
+    resolution:
+      integrity: sha512-JeMq7fEshyepOWDfcfHK06N3MhyPhz++vtqWhMT5O9A3K42rdsEDpfdVqjaqaAhsw6a+ZqeDvQVtD0hFHQWrzg==
   /dependency-graph/0.9.0:
     dev: true
     engines:
@@ -3288,6 +3303,7 @@ shrinkwrapMinorVersion: 9
 shrinkwrapVersion: 3
 specifiers:
   '@11ty/eleventy': ^0.11.1
+  '@11ty/eleventy-navigation': ^0.2.0
   autoprefixer: ^10.2.5
   concurrently: ^6.0.2
   eleventy-plugin-seo: ^0.5.1
