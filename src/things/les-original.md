@@ -5,5 +5,5 @@ link: https://www.notion.so/marcsist/LES-ORIGINAL-bb2c56543cce43e49b850c0219119c
 date: 2020-10-15
 tags:
   - things
-layout: layouts/thing.njk
+layout: layouts/thing-signup.njk
 ---

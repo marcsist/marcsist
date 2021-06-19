@@ -44,6 +44,11 @@ body {
   max-width: 640px;
   color: var(--color-text-main);
 }
+
+input { 
+  caret-color: var(--color-primary);
+}
+
 .wrapper {
   min-height: var(--wrapper-height);
   place-items: center;
