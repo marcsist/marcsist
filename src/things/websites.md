@@ -19,7 +19,7 @@ layout: layouts/thing.njk
   ---
 
 ## SuperHi Courses
-My go-to for online courses is [SuperHi](https://www.superhi.com/). Hi-ly recommended.
+My go-to for online courses is [SuperHi](https://www.superhi.com/?r=marcsist) (referral). Hi-ly recommended.
 
 ### [A Night in Japan](http://marcsnightinjapan.siteleaf.net/)  
   A jekyll powered travel blog
