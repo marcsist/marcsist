@@ -6,6 +6,7 @@
 :root {
   --color-bg: #FFF;
   --color-text-main: #453B38;
+  --color-text-subtle: #453B3850;
   --color-primary: #0B5192;
   --wrapper-height: 85vh;
   --image-max-width: none;
@@ -14,6 +15,17 @@
   --radius-card-border: 1rem;
   --radius-small: .6em;
 }
+
+/* dark mode css variables! */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-bg: #111118;
+    --color-text-main: #ffffff;
+    --color-text-subtle: #FFFFFF90;
+
+  }
+}
+
 
 /* Basic page style resets */
 * {
@@ -96,7 +108,7 @@ img {
 }
 
 .subtle {
-  color: #1F2937;
+  color: var(--color-text-subtle);
   font-weight: 500;
 }
 
@@ -105,7 +117,7 @@ img {
 #mc_embed_signup {
   border: 1px solid #7c99ce4d;
   border-radius: var(--radius-card-border);
-  background: GhostWhite;
+  background: var(--color-bg);
   padding: 16px;
 }
 
@@ -121,6 +133,8 @@ img {
 
 #mc_embed_signup input {
   border: 2px solid #7c99ce4d;
+  background: var(--color-bg);
+  color: var(--text-main);
   border-radius: var(--radius-small);
   padding: .5em 1em;
 }
@@ -141,7 +155,7 @@ img {
   margin-top: 1rem;
   flex-direction: row;
   display: flex;
-  background-color: #fff;
+  background-color: var(--color-bg);
   padding: 1em;
   border: 1px solid #7c99ce4d;
   border-radius: var(--radius-card-border);
