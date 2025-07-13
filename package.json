@@ -4,29 +4,26 @@
   "description": "Bas as hell, and a designer.",
   "scripts": {
     "start": "eleventy --serve",
-    "build": "NODE_ENV=production eleventy"
+    "build": "eleventy"
   },
   "dependencies": {
     "eleventy-plugin-seo": "^0.5.2",
-    "luxon": "^2.0.1"
+    "luxon": "^3.4.4"
   },
   "devDependencies": {
-    "@11ty/eleventy": "^0.11.1",
-    "@11ty/eleventy-navigation": "^0.2.0"
+    "@11ty/eleventy": "^2.0.1",
+    "@11ty/eleventy-navigation": "^0.3.0"
   },
   "engines": {
-    "node": "12"
+    "node": "18"
   },
   "repository": {
     "url": "https://github.com/marcsist/marcsist"
   },
-  "glitch": {
-    "projectType": "generated_static"
-  },
   "license": "MIT",
   "keywords": [
     "node",
-    "glitch",
-    "express"
+    "eleventy",
+    "blog"
   ]
 }
