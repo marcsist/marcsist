@@ -179,7 +179,7 @@ img {
   background-color: var(--color-bg);
   padding: 1em;
   border: 1px solid #7c99ce4d;
-  border-radius: var(--radius-card-border);
+  border-radius: 6px;
   flex-shrink: 0;
   position: relative;
 }
