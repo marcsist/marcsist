@@ -74,7 +74,7 @@ class ThemeSwitcher {
   
   updateUI() {
     const theme = this.themes[this.currentTheme];
-    this.themeIcon.textContent = theme.icon;
+    this.themeIcon.textContent = '';
     this.themeText.textContent = theme.label;
     
     // Update active state
