@@ -14,6 +14,8 @@
   --image-max-width: none;
   --font-family: "Inter";
   --font-family-header: "Inter";
+  --content-max-width: 800px;
+  --content-padding: 16px;
 }
 
 /* Dark theme */
@@ -62,8 +64,8 @@ body {
   font-family: var(--font-family);
   background-color: var(--color-bg);
   margin: auto;
-  padding: 0 16px;
-  max-width: 800px;
+  padding: 0 var(--content-padding);
+  max-width: var(--content-max-width);
   color: var(--color-text-main);
 }
 
@@ -78,8 +80,24 @@ input {
 .content {
   display: flex;
   flex-direction: column;
-  max-width: 800px;
+  max-width: var(--content-max-width);
+  width: 100%;
   margin: auto;
+  padding: 0;
+}
+
+/* Ensure all wrapper types use consistent width */
+.wrapper {
+  max-width: var(--content-max-width);
+  width: 100%;
+  margin: 0 auto;
+}
+
+.wrapper.home .content,
+.wrapper.post > div {
+  max-width: var(--content-max-width);
+  width: 100%;
+  margin: 0 auto;
 }
 
 /* Nav header */
