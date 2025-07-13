@@ -22,7 +22,16 @@
     --color-bg: #111118;
     --color-text-main: #ffffff;
     --color-text-subtle: #FFFFFF90;
+    --color-blockquote-bg: #1a1a1f;
+    --color-blockquote-text: #ffffff;
+  }
+}
 
+/* light mode blockquote variables */
+:root {
+  --color-blockquote-bg: #e3edf2;
+  --color-blockquote-text: var(--color-text-main);
+}</parameter>
   }
 }
 
@@ -304,7 +313,8 @@ a:hover {
 }
 
 blockquote {
-  background-color: #e3edf2;
+  background-color: var(--color-blockquote-bg);
+  color: var(--color-blockquote-text);
   padding: .5em 1em 0.5em 1em;
   border-left: 8px var(--color-primary) solid;
   margin: 1em 0 1.6em 0;
