@@ -1,18 +1,32 @@
-{%- set currentPath = collections.all | eleventyNavigationBreadcrumb(eleventyNavigation.key or page.fileSlug, { markdownIteration: true }) -%}
+{%- set navPages = collections.all | eleventyNavigation -%}
+{%- set currentPage = eleventyNavigation.key or page.fileSlug -%}
 
-{%- if currentPath.length > 1 -%}
+{%- if eleventyNavigation.parent -%}
 <nav class="breadcrumbs" aria-label="Breadcrumb">
   <ol class="breadcrumb-list">
-    {%- for item in currentPath -%}
-      <li class="breadcrumb-item">
-        {%- if not loop.last -%}
-          <a href="{{ item.url | url }}" class="breadcrumb-link">{{ item.title }}</a>
-          <span class="breadcrumb-separator" aria-hidden="true">/</span>
-        {%- else -%}
-          <span class="breadcrumb-current" aria-current="page">{{ item.title }}</span>
+    <li class="breadcrumb-item">
+      <a href="/" class="breadcrumb-link">Home</a>
+      <span class="breadcrumb-separator" aria-hidden="true">/</span>
+    </li>
+    <li class="breadcrumb-item">
+      {%- for nav in navPages -%}
+        {%- if nav.key == eleventyNavigation.parent -%}
+          <a href="{{ nav.url }}" class="breadcrumb-link">{{ nav.title }}</a>
         {%- endif -%}
-      </li>
-    {%- endfor -%}
+      {%- endfor -%}
+    </li>
+  </ol>
+</nav>
+{%- elif currentPage == "Notes" or currentPage == "Things" -%}
+<nav class="breadcrumbs" aria-label="Breadcrumb">
+  <ol class="breadcrumb-list">
+    <li class="breadcrumb-item">
+      <a href="/" class="breadcrumb-link">Home</a>
+      <span class="breadcrumb-separator" aria-hidden="true">/</span>
+    </li>
+    <li class="breadcrumb-item">
+      <span class="breadcrumb-current" aria-current="page">{{ title }}</span>
+    </li>
   </ol>
 </nav>
 {%- endif -%}

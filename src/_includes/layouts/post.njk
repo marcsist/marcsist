@@ -5,6 +5,8 @@ templateClass: tmpl-home
 
 <div class="wrapper post">
   <div>
+    {%- set eleventyNavigation = { parent: "Notes" } -%}
+    {% include 'layouts/blocks/breadcrumbs.njk' %}
     <section id="hero">
     <h1 class='postTitle'>{{title}}</h1>
       <p>

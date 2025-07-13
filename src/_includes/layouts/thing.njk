@@ -1,12 +1,12 @@
 ---
 layout: layouts/base.njk
 templateClass: tmpl-home
-eleventyNavigation:
-  parent: Things
 ---
 
 <div class="wrapper post">
   <div>
+    {%- set eleventyNavigation = { parent: "Things" } -%}
+    {% include 'layouts/blocks/breadcrumbs.njk' %}
     <section id="hero">
 
       <h1 class='postTitle'>{{title}}</h1>
