@@ -512,7 +512,6 @@ footer .theme-dropdown.show {
 footer .theme-option {
   display: flex;
   align-items: center;
-  gap: 0.5rem;
   width: 100%;
   padding: 0.75rem;
   background: none;
@@ -540,10 +539,6 @@ footer .theme-option:last-child {
 footer .theme-option.active {
   background: var(--color-primary);
   color: white;
-}
-
-footer .theme-option-icon {
-  font-size: 1rem;
 }
 
 @media screen and (max-width: 410px) {

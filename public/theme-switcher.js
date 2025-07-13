@@ -7,9 +7,9 @@ class ThemeSwitcher {
     this.themeText = document.querySelector('.theme-text');
     
     this.themes = {
-      light: { icon: '☀️', label: 'Light' },
-      dark: { icon: '🌙', label: 'Dark' },
-      system: { icon: '💻', label: 'System' }
+      light: { label: 'Light' },
+      dark: { label: 'Dark' },
+      system: { label: 'System' }
     };
     
     this.init();
