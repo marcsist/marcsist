@@ -11,11 +11,14 @@ templateClass: tmpl-home
       
     <section id="notes">
       <h2><b>Notes</b></h2>
-      <ul class="no-bullet">
+      <ul class="no-bullet" role="list">
         {%- for post in collections.posts | reverse -%}
-          <li{% if page.url == post.url %} aria-current="page"{% endif %}>{{ post.data.page.date | htmlDateString }} — <a href='{{ post.url }}'>{{ post.data.title }}</a></li>
+          <li{% if page.url == post.url %} aria-current="page"{% endif %} role="listitem">
+            <time datetime="{{ post.data.page.date | htmlDateString }}">{{ post.data.page.date | htmlDateString }}</time> — 
+            <a href='{{ post.url }}'>{{ post.data.title }}</a>
+          </li>
         {%- endfor -%}
-        <li><a href="/notes">View all notes</a></li>
+        <li role="listitem"><a href="/notes">View all notes</a></li>
       </ul>
     </section>
     {% include 'layouts/blocks/things.njk' %}
