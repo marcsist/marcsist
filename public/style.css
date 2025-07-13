@@ -524,6 +524,26 @@ footer .theme-option {
   transition: background-color 0.2s ease;
 }
 
+/* Ensure theme options are visible in light mode */
+:root footer .theme-option {
+  color: #453B38;
+}
+
+/* Ensure theme options are visible in dark mode */
+[data-theme="dark"] footer .theme-option {
+  color: #ffffff;
+}
+
+[data-theme="system"] footer .theme-option {
+  color: #453B38;
+}
+
+@media (prefers-color-scheme: dark) {
+  [data-theme="system"] footer .theme-option {
+    color: #ffffff;
+  }
+}
+
 footer .theme-option:hover {
   background: var(--color-text-subtle);
 }
