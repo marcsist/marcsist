@@ -302,8 +302,9 @@ ul.no-bullet {
   margin-left: 0.5em !important;
 }
 .warn {
-  color: #fd4646;
-  background-color: #fd464624;
+  color: #8B5A5A;
+  background-color: #8B5A5A15;
+  border: 1px solid #8B5A5A20;
 }
 
 .primary {
