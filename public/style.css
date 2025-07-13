@@ -423,8 +423,19 @@ footer {
   font-size: .9em;
   font-weight: 800;
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer .footer-links {
+  display: flex;
   align-items: center;
   gap: 0.5rem;
+}
+
+footer .footer-theme {
+  display: flex;
+  align-items: center;
 }
 
 footer .theme-switcher {
