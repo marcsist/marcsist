@@ -1,0 +1,18 @@
+{%- set currentPath = collections.all | eleventyNavigationBreadcrumb(eleventyNavigation.key or page.fileSlug, { markdownIteration: true }) -%}
+
+{%- if currentPath.length > 1 -%}
+<nav class="breadcrumbs" aria-label="Breadcrumb">
+  <ol class="breadcrumb-list">
+    {%- for item in currentPath -%}
+      <li class="breadcrumb-item">
+        {%- if not loop.last -%}
+          <a href="{{ item.url | url }}" class="breadcrumb-link">{{ item.title }}</a>
+          <span class="breadcrumb-separator" aria-hidden="true">/</span>
+        {%- else -%}
+          <span class="breadcrumb-current" aria-current="page">{{ item.title }}</span>
+        {%- endif -%}
+      </li>
+    {%- endfor -%}
+  </ol>
+</nav>
+{%- endif -%}

@@ -5,6 +5,7 @@ templateClass: tmpl-home
 
 <div class="wrapper home">
   <div class="content">
+    {% include 'layouts/blocks/breadcrumbs.njk' %}
     {{ content | safe }}
       {% include 'layouts/blocks/things.njk' %}
       <li><a href="/"><-Back Home</a></li>

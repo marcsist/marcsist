@@ -566,6 +566,54 @@ footer .theme-option.active {
   color: white;
 }
 
+/* Breadcrumbs */
+.breadcrumbs {
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid #00000008;
+}
+
+.breadcrumb-list {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.25rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 0.9rem;
+}
+
+.breadcrumb-item {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.breadcrumb-link {
+  color: var(--color-text-subtle);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.breadcrumb-link:hover {
+  color: var(--color-primary);
+  border-bottom: none;
+}
+
+.breadcrumb-separator {
+  color: var(--color-text-subtle);
+  opacity: 0.5;
+  font-weight: 300;
+  margin: 0 0.25rem;
+}
+
+.breadcrumb-current {
+  color: var(--color-text-main);
+  font-weight: 600;
+}
+
 @media screen and (max-width: 410px) {
   body {
     font-size: 14px;
