@@ -27,38 +27,16 @@
           lots of <a href="https://read.cv/marcs">experience</a> at design
         </h2>
       </div>
-      <div class="header-controls">
-        <nav>
-          {% set navPages = collections.all | eleventyNavigation %}
-          <ul>
-          {%- for entry in navPages %}
-            <li{% if entry.url == page.url %} class="my-active-class"{% endif %}>
-              <a href="{{ entry.url | url }}">{{ entry.title }}</a>
-            </li>
-          {%- endfor %}
-          </ul>
-        </nav>
-        <div class="theme-switcher">
-          <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
-            <span class="theme-icon">🌙</span>
-            <span class="theme-text">Theme</span>
-            <span class="dropdown-arrow">▼</span>
-          </button>
-          <div class="theme-dropdown" id="theme-dropdown">
-            <button class="theme-option" data-theme="light">
-              <span class="theme-option-icon">☀️</span>
-              Light
-            </button>
-            <button class="theme-option" data-theme="dark">
-              <span class="theme-option-icon">🌙</span>
-              Dark
-            </button>
-            <button class="theme-option" data-theme="system">
-              <span class="theme-option-icon">💻</span>
-              System
-            </button>
-          </div>
-        </div>
+      <nav>
+        {% set navPages = collections.all | eleventyNavigation %}
+        <ul>
+        {%- for entry in navPages %}
+          <li{% if entry.url == page.url %} class="my-active-class"{% endif %}>
+            <a href="{{ entry.url | url }}">{{ entry.title }}</a>
+          </li>
+        {%- endfor %}
+        </ul>
+      </nav>
       </div>
     </div>
 </header>
