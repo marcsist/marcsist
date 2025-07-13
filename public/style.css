@@ -451,11 +451,9 @@ footer .theme-toggle {
 
 footer .theme-toggle:hover {
   color: var(--color-primary);
-  border-bottom: 4px solid var(--color-primary);
 }
 
 footer .theme-toggle:focus {
-  border-bottom: 4px solid var(--color-primary);
   outline-offset: 2px;
 }
 
