@@ -295,7 +295,7 @@ ul.no-bullet {
 .chip {
   padding: 0px 0.5rem;
   display: inline-block;
-  border-radius: var(--radius-small);
+  border-radius: 12px;
   font-weight: 600;
   font-size: 0.8rem;
   text-transform: uppercase;
@@ -304,7 +304,6 @@ ul.no-bullet {
 .warn {
   color: #8B5A5A;
   background-color: #8B5A5A15;
-  border: 1px solid #8B5A5A20;
 }
 
 .primary {
