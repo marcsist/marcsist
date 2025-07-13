@@ -1,17 +1,14 @@
 <section id="things">
-      <h2 class="visually-hidden">Projects and Things</h2>
       <ul class="no-bullet">
         {%- for post in collections.things  | reverse -%}
         <li{% if page.url == post.url %} aria-current="page"{% endif %}>
-        <div class="thing no-image" role="article">
+        <div class="thing no-image">
          <div class="text">
-           <h3>{{ post.data.title }}<span class="chip {{post.data.chiptype}}" aria-label="Status: {{post.data.status}}">{{post.data.status}}</span></h3>
-           <p class="subtle"> {{ post.data.description }}</p>
-           <div class="thing-links">
-             <a href="{{ post.url }}" class="primary-link">Read more about {{ post.data.title }}</a>
-             {% if post.data.link %}<a href="{{ post.data.link }}" class="external-link" rel="noopener" target="_blank">Visit project<span class="visually-hidden"> (opens in new tab)</span></a>{% endif %}
-           </div>
+           <h3>{{ post.data.title }}<p class="chip {{post.data.chiptype}}">{{post.data.status}}</p></h3>
+           <p class="subtle"> {{ post.data.description }} 
+           <a href="{{ post.data.link }}">Link-></a></p>
          </div>
+         <a href="{{ post.url }}" class="fullcard">{{ post.data.title }}</a>
         </div>
       </li>
         {%- endfor -%} 

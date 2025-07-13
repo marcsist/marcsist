@@ -402,22 +402,6 @@ footer {
   font-weight: 800;
 }
 
-/* Keyboard navigation specific styles */
-.keyboard-navigation *:focus {
-  outline: 3px solid var(--color-primary) !important;
-  outline-offset: 2px !important;
-}
-
-/* Hide focus indicators when using mouse */
-:not(.keyboard-navigation) *:focus {
-  outline: none;
-}
-
-:not(.keyboard-navigation) *:focus-visible {
-  outline: 3px solid var(--color-primary);
-  outline-offset: 2px;
-}
-
 @media screen and (max-width: 410px) {
   body {
     font-size: 14px;

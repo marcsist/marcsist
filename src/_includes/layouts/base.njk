@@ -17,21 +17,16 @@
 
       gtag('config', 'G-LLJT1DPC30');
     </script>
-    <script src="/public/keyboard-navigation.js" defer></script>
 
   </head>
-  <!-- Skip to main content link for keyboard users -->
-  <a href="#main-content" class="skip-link">Skip to main content</a>
-  
   <header>
     
   <nav>
-    <h2 class="visually-hidden">Main Navigation</h2>
     {% set navPages = collections.all | eleventyNavigation %}
-<ul role="navigation" aria-label="Main navigation">
+<ul>
 {%- for entry in navPages %}
   <li{% if entry.url == page.url %} class="my-active-class"{% endif %}>
-    <a href="{{ entry.url | url }}"{% if entry.url == page.url %} aria-current="page"{% endif %}>{{ entry.title }}</a>
+    <a href="{{ entry.url | url }}">{{ entry.title }}</a>
   </li>
 {%- endfor %}
 </ul>
@@ -42,7 +37,7 @@
   </h2>
 </header>
   <body>
-  <main id="main-content" tabindex="-1">
+  <main>
   
     {{ content | safe }}
     
