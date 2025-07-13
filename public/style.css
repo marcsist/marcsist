@@ -12,9 +12,6 @@
   --image-max-width: none;
   --font-family: "Inter";
   --font-family-header: "Inter";
-  --radius-card-border: 1rem;
-  --radius-small: .6em;
-}
 
 /* dark mode css variables! */
 @media (prefers-color-scheme: dark) {
