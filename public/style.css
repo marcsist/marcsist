@@ -42,54 +42,6 @@
 END Glitch hello-app default styles
 ******************************************************************************/
 
-/* Accessibility improvements */
-.visually-hidden {
-  position: absolute !important;
-  width: 1px !important;
-  height: 1px !important;
-  padding: 0 !important;
-  margin: -1px !important;
-  overflow: hidden !important;
-  clip: rect(0, 0, 0, 0) !important;
-  white-space: nowrap !important;
-  border: 0 !important;
-}
-
-.skip-link {
-  position: absolute;
-  top: -40px;
-  left: 6px;
-  background: var(--color-primary);
-  color: white;
-  padding: 8px;
-  text-decoration: none;
-  border-radius: 4px;
-  z-index: 1000;
-  font-weight: 600;
-}
-
-.skip-link:focus {
-  top: 6px;
-  border-bottom: none;
-}
-
-/* Enhanced focus styles */
-*:focus {
-  outline: 3px solid var(--color-primary);
-  outline-offset: 2px;
-}
-
-/* Remove default outline and replace with custom focus */
-a:focus, 
-button:focus, 
-input:focus, 
-textarea:focus,
-select:focus {
-  outline: 3px solid var(--color-primary);
-  outline-offset: 2px;
-  border-radius: 4px;
-}
-
 /* Page structure */
 
 html {
@@ -107,12 +59,6 @@ body {
 
 input { 
   caret-color: var(--color-primary);
-  transition: border-color 0.3s ease, box-shadow 0.3s ease;
-}
-
-input:focus {
-  border-color: var(--color-primary);
-  box-shadow: 0 0 0 3px rgba(11, 81, 146, 0.1);
 }
 
 .wrapper {
@@ -138,9 +84,7 @@ nav li {
 }
 
 header a:focus {
-  border-bottom: 4px solid var(--color-primary);
-  outline: 3px solid var(--color-primary);
-  outline-offset: 2px;
+  border-bottom: 4px solid #0e6bc2;
 }
 
 nav ul {
@@ -190,16 +134,9 @@ img {
 #mc_embed_signup input {
   border: 2px solid #7c99ce4d;
   background: var(--color-bg);
-  color: var(--color-text-main);
+  color: var(--text-main);
   border-radius: var(--radius-small);
   padding: .5em 1em;
-  transition: border-color 0.3s ease;
-}
-
-#mc_embed_signup input:focus {
-  border-color: var(--color-primary);
-  outline: 3px solid var(--color-primary);
-  outline-offset: 2px;
 }
 
 #mce-EMAIL .input{
@@ -208,14 +145,8 @@ img {
 
 #mc_embed_signup .button {
   margin-top: 1em;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-#mc_embed_signup .button:hover,
-#mc_embed_signup .button:focus {
-  background-color: #0a4a8a;
-  border-color: #0a4a8a;
+  
+  
 }
 
 /* Thing */
@@ -230,17 +161,16 @@ img {
   border-radius: var(--radius-card-border);
   flex-shrink: 0;
   position: relative;
-  transition: border-color 0.3s ease;
 }
 
 .thing:hover {
   border: #0e6bc2 solid 1px;
 }
 
-.thing:focus-within,
-.thing:has(a:focus) {
-  outline: 3px solid var(--color-primary);
-  outline-offset: 2px;
+.thing:focus-within {
+  outline-offset: 0px;
+  outline: #7c99ce4d solid 5px;
+  -moz-outline-radius: 1.3rem;
   border: #0e6bc2 solid 1px;
 }
 
@@ -256,40 +186,26 @@ li {
   border-radius: var(--radius-small);
 }
 
-.thing-links {
-  margin-top: 0.5rem;
-  display: flex;
-  gap: 1rem;
-  flex-wrap: wrap;
+.thing a {
+  z-index: 4;
+  position: relative;
 }
 
-.thing-links a {
-  font-size: 0.9rem;
-  padding: 0.25rem 0.5rem;
-  border-radius: var(--radius-small);
-  transition: all 0.2s ease;
+a.fullcard {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 3;
+  /*make the text disappear */
+  line-height: 0;
+  font-size: 0;
+  color: transparent;
 }
 
-.primary-link {
-  background: var(--color-primary);
-  color: white !important;
-}
-
-.primary-link:hover,
-.primary-link:focus {
-  background: #0a4a8a;
-  border-bottom: none !important;
-}
-
-.external-link {
-  background: #f0f0f0;
-  color: var(--color-text-main) !important;
-}
-
-.external-link:hover,
-.external-link:focus {
-  background: #e0e0e0;
-  border-bottom: none !important;
+a:hover.fullcard {
+  border-bottom: none;
 }
 
 /* Typography */
@@ -484,6 +400,22 @@ footer {
   margin: 2rem auto;
   font-size: .9em;
   font-weight: 800;
+}
+
+/* Keyboard navigation specific styles */
+.keyboard-navigation *:focus {
+  outline: 3px solid var(--color-primary) !important;
+  outline-offset: 2px !important;
+}
+
+/* Hide focus indicators when using mouse */
+:not(.keyboard-navigation) *:focus {
+  outline: none;
+}
+
+:not(.keyboard-navigation) *:focus-visible {
+  outline: 3px solid var(--color-primary);
+  outline-offset: 2px;
 }
 
 @media screen and (max-width: 410px) {
