@@ -433,6 +433,11 @@ footer .footer-links {
   gap: 0.5rem;
 }
 
+footer .footer-links a:hover {
+  border-bottom: none;
+  text-decoration: underline;
+}
+
 footer .footer-theme {
   display: flex;
   align-items: center;
