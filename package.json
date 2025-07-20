@@ -7,6 +7,7 @@
     "build": "eleventy"
   },
   "dependencies": {
+    "@vercel/analytics": "^1.5.0",
     "eleventy-plugin-seo": "^0.5.2",
     "luxon": "^3.7.1"
   },
