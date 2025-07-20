@@ -598,7 +598,8 @@ footer .theme-option.active {
   gap: 0.25rem;
   margin: 0;
   padding: 0;
-  list-style: none;
+  list-style: none !important;
+  list-style-type: none !important;
   font-size: 0.9rem;
 }
 
@@ -606,6 +607,8 @@ footer .theme-option.active {
   display: flex;
   align-items: center;
   gap: 0.25rem;
+  list-style: none !important;
+  list-style-type: none !important;
 }
 
 .breadcrumb-link {
