@@ -15,7 +15,7 @@ One of the reasons I built this website was to transition off of WYSIWYG web edi
 
 -  My [personal portfolio](https://marcsw.myportfolio.com) was built with Adobe Portfolio
 -  I made the landing site for my studio [BIEM ETC design](https://www.biemetc.com) on Adobe's tool too
--  When I committed to the [Les Original](https://www.lesorignal.com) domain I acted on a promotion from Mailchip.. they seem to own it more than I do.
+-  When I committed to the [Les Original](https://www.lesoriginal.com) domain I acted on a promotion from Mailchip.. they seem to own it more than I do.
 -  Before leaving Canada I used an old Square cardreader login to set up shop at [lesoriginal.square.site](https://lesoriginal.square.site)
 -  I've built all sorts of blogs and sites on Tumblr since way back
     -  [product of failures](https://prodoffailures.tumblr.com/)
