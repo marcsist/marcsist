@@ -20,33 +20,25 @@
 
   </head>
   <header>
-    <div class="header-top">
-      <div class="header-content">
-        <h2>
-          <b>marcsist</b><br>
-          lots of <a href="https://www.linkedin.com/in/marcs-wilkinson">experience</a> at design
-        </h2>
-      </div>
-      <nav>
-        {% set navPages = collections.all | eleventyNavigation %}
-        <ul>
-        {%- for entry in navPages %}
-          <li{% if entry.url == page.url %} class="my-active-class"{% endif %}>
-            <a href="{{ entry.url | url }}">{{ entry.title }}</a>
-          </li>
-        {%- endfor %}
-        </ul>
-      </nav>
-      </div>
-    </div>
+    <div class="site-id"><span class="slash">/</span><a href="/">marcsist</a></div>
+    <nav>
+      {% set navPages = collections.all | eleventyNavigation %}
+      <ul>
+      {%- for entry in navPages %}
+        <li{% if entry.url == page.url %} class="my-active-class"{% endif %}>
+          <a href="{{ entry.url | url }}">{{ entry.title | lower }}</a>
+        </li>
+      {%- endfor %}
+      </ul>
+    </nav>
 </header>
   <body>
   <main>
-  
+
     {{ content | safe }}
-    
+
   </main>
-    
+
     {% include 'layouts/blocks/footer.njk' %}
     <script src="/public/theme-switcher.js"></script>
     <script>

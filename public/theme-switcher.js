@@ -3,13 +3,12 @@ class ThemeSwitcher {
     this.toggle = document.getElementById('theme-toggle');
     this.dropdown = document.getElementById('theme-dropdown');
     this.options = document.querySelectorAll('.theme-option');
-    this.themeIcon = document.querySelector('.theme-icon');
     this.themeText = document.querySelector('.theme-text');
-    
+
     this.themes = {
-      light: { label: 'Light' },
-      dark: { label: 'Dark' },
-      system: { label: 'System' }
+      light: { label: 'light' },
+      dark: { label: 'dark' },
+      system: { label: 'system' }
     };
     
     this.init();
@@ -74,8 +73,7 @@ class ThemeSwitcher {
   
   updateUI() {
     const theme = this.themes[this.currentTheme];
-    this.themeIcon.textContent = '';
-    this.themeText.textContent = theme.label;
+    if (this.themeText) this.themeText.textContent = theme.label;
     
     // Update active state
     this.options.forEach(option => {
