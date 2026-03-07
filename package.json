@@ -16,7 +16,7 @@
     "@11ty/eleventy-navigation": "^0.3.0"
   },
   "engines": {
-    "node": "18"
+    "node": "24.x"
   },
   "repository": {
     "url": "https://github.com/marcsist/marcsist"
