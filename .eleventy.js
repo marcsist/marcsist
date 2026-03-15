@@ -46,6 +46,23 @@ module.exports = function(eleventyConfig) {
   */
   
   eleventyConfig.setBrowserSyncConfig({ ghostMode: false });
+
+  eleventyConfig.addTransform("image-groups", function(content, outputPath) {
+    if (!outputPath || !outputPath.endsWith(".html")) return content;
+
+    return content.replace(
+      /((?:<p><img[^>]*>\s*<\/p>\s*){2,})/g,
+      (run) => {
+        const paras = run.match(/<p><img[^>]*>\s*<\/p>/g) || [];
+        let result = '';
+        for (let i = 0; i < paras.length; i += 3) {
+          const group = paras.slice(i, i + 3);
+          result += `<div class="image-row image-row--${group.length}">${group.join('')}</div>`;
+        }
+        return result;
+      }
+    );
+  });
   
   /*
   From: https://github.com/11ty/eleventy/issues/529#issuecomment-568257426 
