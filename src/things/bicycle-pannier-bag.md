@@ -2,7 +2,7 @@
 title: Bicycle Pannier bag
 description: Slim pannier bag prototyping bonded no-sew zipper construction
 link: /things/bicycle-pannier-bag/
-date: 2017-09-01
+date: 2017-11-01
 category: goods
 tags: [things]
 layout: layouts/thing.njk

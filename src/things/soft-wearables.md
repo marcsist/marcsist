@@ -2,7 +2,7 @@
 title: Soft Wearables
 description: Sensor-embedded garments detecting posture and movement with threadlike capacitive sensors
 link: /things/soft-wearables/
-date: 2018-06-01
+date: 2018-03-01
 category: goods
 tags: [things]
 layout: layouts/thing.njk

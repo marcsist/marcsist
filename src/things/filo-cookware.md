@@ -3,7 +3,7 @@ title: filo cookware
 description: A fine line of cookware designed for a TVS Italia competition
 link: /things/filo-cookware/
 externalLink: https://www.behance.net/gallery/37454451/filo
-date: 2016-07-01
+date: 2015-07-01
 category: goods
 tags: [things]
 layout: layouts/thing.njk

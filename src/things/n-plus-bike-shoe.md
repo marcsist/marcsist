@@ -3,7 +3,7 @@ title: N+ Bike Shoe platform
 description: 3D-printed cycling shoe platform with swappable outsoles for riding and hiking
 link: /things/n-plus-bike-shoe/
 externalLink: https://last.lesoriginal.com/n-plus-signup
-date: 2016-06-01
+date: 2017-05-01
 category: goods
 tags: [things]
 layout: layouts/thing.njk
