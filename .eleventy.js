@@ -1,6 +1,40 @@
 const { DateTime } = require("luxon");
 const pluginSEO = require("eleventy-plugin-seo");
 const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
+const Image = require("@11ty/eleventy-img");
+
+const OUTPUT_DIR = "build"; // single source of truth — also used in dir.output
+
+const IMAGE_OPTIONS = {
+  widths: [400, 1200],
+  formats: ["webp", "jpeg"],
+  outputDir: `./${OUTPUT_DIR}/img/`,
+  urlPath: "/img/",
+  sharpOptions: {
+    jpeg: { quality: 85 },
+  },
+  cacheOptions: { duration: "1d", directory: ".cache" },
+};
+
+// Image shortcode for the gallery page
+// eager=true skips loading="lazy" for above-the-fold images (first 6 cells)
+async function imageShortcode(src, alt, eager = false) {
+  const metadata = await Image(src, IMAGE_OPTIONS);
+  const thumb    = metadata.jpeg[0];
+  const thumbWebp = metadata.webp[0];
+  const fullWebp  = metadata.webp[1] || metadata.webp[0];
+  const loading   = eager ? "eager" : "lazy";
+  return `<picture>
+    <source srcset="${thumbWebp.url}" type="image/webp">
+    <img src="${thumb.url}"
+         alt="${alt}"
+         width="${thumb.width}"
+         height="${thumb.height}"
+         loading="${loading}"
+         decoding="async"
+         data-full="${fullWebp.url}">
+  </picture>`;
+}
 
 module.exports = function(eleventyConfig) {
   eleventyConfig.setTemplateFormats([
@@ -19,6 +53,8 @@ module.exports = function(eleventyConfig) {
   ]);
   eleventyConfig.addPassthroughCopy("public");
   eleventyConfig.addPlugin(eleventyNavigationPlugin);
+
+  eleventyConfig.addAsyncShortcode("image", imageShortcode);
   
   /*
   From: https://github.com/artstorm/eleventy-plugin-seo
@@ -63,6 +99,54 @@ module.exports = function(eleventyConfig) {
       }
     );
   });
+
+  /*
+   * Async transform: replace <img src="/public/things/..."> with optimized <picture> elements.
+   * Runs after image-groups so the grouping divs are already in place.
+   * Source images remain in public/things/ (passthrough-copied as dead files until cleaned up —
+   * see TODOS.md). Browsers use the optimized /img/ paths from srcset.
+   *
+   * Data flow:
+   *   <img src="/public/things/foo/bar.png">
+   *      → Image() → build/img/hash-400w.webp + hash-1200w.webp
+   *      → <picture><source ...><img src="hash-400w.webp" data-full="hash-1200w.webp"></picture>
+   */
+  eleventyConfig.addTransform("optimize-images", async function(content, outputPath) {
+    if (!outputPath || !outputPath.endsWith(".html")) return content;
+
+    const imgRegex = /<img([^>]*?)src="(\/public\/things\/[^"]+)"([^>]*?)>/g;
+    const matches = [];
+    let match;
+    while ((match = imgRegex.exec(content)) !== null) {
+      matches.push({ full: match[0], src: "." + match[2], attrs: match[1] + match[3] });
+    }
+
+    for (const item of matches) {
+      try {
+        const metadata = await Image(item.src, IMAGE_OPTIONS);
+        const thumb    = metadata.jpeg[0];
+        const thumbWebp = metadata.webp[0];
+        const fullWebp  = metadata.webp[1] || metadata.webp[0];
+        const altMatch  = /alt="([^"]*)"/.exec(item.attrs);
+        const alt       = altMatch ? altMatch[1] : "";
+        const picture   = `<picture>
+    <source srcset="${thumbWebp.url}" type="image/webp">
+    <img src="${thumb.url}"
+         alt="${alt}"
+         width="${thumb.width}"
+         height="${thumb.height}"
+         loading="lazy"
+         decoding="async"
+         data-full="${fullWebp.url}">
+  </picture>`;
+        content = content.replace(item.full, picture);
+      } catch (_) {
+        // Source file missing: leave original <img> in place rather than breaking the build.
+        // Gallery images use the shortcode which hard-fails; transforms are more lenient.
+      }
+    }
+    return content;
+  });
   
   /*
   From: https://github.com/11ty/eleventy/issues/529#issuecomment-568257426 
@@ -87,7 +171,7 @@ module.exports = function(eleventyConfig) {
     dir: {
       input: "src",
       includes: "_includes",
-      output: "build"
+      output: OUTPUT_DIR
     }
   };
 };

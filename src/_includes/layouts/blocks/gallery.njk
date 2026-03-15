@@ -1,0 +1,5 @@
+<div class="photo-grid">
+  {%- for photo in photos -%}
+    {% image photo.src, photo.alt, loop.index0 < 6 %}
+  {%- endfor -%}
+</div>

@@ -4,3 +4,4 @@ node_modules
 web_modules
 .env
 .gstack/
+.cache/

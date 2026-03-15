@@ -4,7 +4,8 @@
   "description": "Bas as hell, and a designer.",
   "scripts": {
     "start": "eleventy --serve",
-    "build": "eleventy"
+    "build": "eleventy",
+    "test": "eleventy --dryrun"
   },
   "dependencies": {
     "@vercel/analytics": "^1.5.0",
@@ -13,6 +14,7 @@
   },
   "devDependencies": {
     "@11ty/eleventy": "^2.0.1",
+    "@11ty/eleventy-img": "^6.0.4",
     "@11ty/eleventy-navigation": "^0.3.0"
   },
   "engines": {
