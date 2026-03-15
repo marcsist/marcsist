@@ -2,17 +2,19 @@
   <div class="section-label">// things</div>
 
   <div class="filter-tabs">
-    <button class="active" onclick="filterThings('all')">all</button>
-    <button onclick="filterThings('new')">new</button>
+    <button class="active" data-filter="all">all</button>
+    <button data-filter="software">software</button>
+    <button data-filter="goods">goods</button>
+    <button data-filter="other">other</button>
   </div>
 
   <div class="things-list">
     {%- for post in collections.things | reverse -%}
-    <div class="thing-item" data-status="{{ post.data.status | lower if post.data.status else '' }}">
+    <div class="thing-item" data-category="{{ post.data.category }}">
       <a href="{{ post.data.link }}" class="thing-link">
-        <span>{{ post.data.title }}{% if post.data.status %}<span class="status">{{ post.data.status }}</span>{% endif %}</span>
+        <span>{{ post.data.title }}</span>
         <span class="thing-desc">{{ post.data.description }}</span>
-        <span class="arrow">→</span>
+        <span class="arrow">{% if post.data.link and ('http' in post.data.link) %}↗{% else %}→{% endif %}</span>
       </a>
     </div>
     {%- endfor -%}
@@ -20,21 +22,21 @@
 </section>
 
 <script>
-function filterThings(filter) {
-  const items = document.querySelectorAll('.thing-item');
-  const buttons = document.querySelectorAll('.filter-tabs button');
+  (function () {
+    const tabs = document.querySelectorAll('.filter-tabs button');
+    const items = document.querySelectorAll('.thing-item');
 
-  buttons.forEach(btn => {
-    btn.classList.toggle('active', btn.textContent.trim() === filter);
-  });
+    tabs.forEach(function (tab) {
+      tab.addEventListener('click', function () {
+        const filter = this.dataset.filter;
 
-  items.forEach(item => {
-    if (filter === 'all') {
-      item.style.display = '';
-    } else {
-      const status = item.dataset.status;
-      item.style.display = status === 'new' ? '' : 'none';
-    }
-  });
-}
+        tabs.forEach(function (t) { t.classList.remove('active'); });
+        this.classList.add('active');
+
+        items.forEach(function (item) {
+          item.style.display = (filter === 'all' || item.dataset.category === filter) ? '' : 'none';
+        });
+      });
+    });
+  })();
 </script>

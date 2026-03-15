@@ -14,6 +14,7 @@ I user-center today's problems and complex challenges into solutions of the near
 
 > - **🌎 Director, Product Design** at [Rasa](https://www.rasa.com/) in Hamburg, Germany.
 > - **🧵 Making what I can** when I can at [Les Original](https://www.lesoriginal.com)
+> - **🎨 Design tidbits** on [Dribbble](https://www.dribbble.com/marcs)
 > - **🚵‍♂️ Bicycle camper** and **old newschool skier**
 
 I've worked alongside researchers and engineers to turn research into real products. As a designer I work at the intersection of technology and tangibles, resolving new product experiences and interactions. I lead product-related design disciplines at Rasa (Content design, Design systems, Product design, User research).
