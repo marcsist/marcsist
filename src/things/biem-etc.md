@@ -1,6 +1,5 @@
 ---
 title: BIEM ETC. design studio
-status: no work
 chiptype: warn
 description: Digital, outdoor product and industrial design bureau
 link: https://www.biemetc.com

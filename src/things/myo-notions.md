@@ -1,7 +1,6 @@
 ---
 title: MYO Notions
 description: Open-source 3D printable notions for gear makers
-status: new
 chiptype: primary
 date: 2021-03-15
 link: https://lesoriginal.notion.site/LES-ORIGINAL-7e4c5a3d17e2429a836beedea3069562
