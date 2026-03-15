@@ -13,7 +13,7 @@
     <div class="thing-item" data-category="{{ post.data.category }}">
       <a href="{{ post.data.link }}" class="thing-link">
         <span>{{ post.data.title }}</span>
-        <span class="thing-desc">{{ post.data.description }}</span>
+        <span class="thing-desc"><span class="thing-desc-inner">{{ post.data.description }}</span></span>
         <span class="arrow">{% if post.data.link and ('http' in post.data.link) %}↗{% else %}→{% endif %}</span>
       </a>
     </div>
