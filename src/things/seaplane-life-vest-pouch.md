@@ -2,7 +2,7 @@
 title: Seaplane Life Vest pouch
 description: Obvious, graspable packaging designed to save lives in seaplane emergencies
 link: /things/seaplane-life-vest-pouch/
-date: 2016-05-01
+date: 2016-04-01
 category: goods
 tags: [things]
 layout: layouts/thing.njk

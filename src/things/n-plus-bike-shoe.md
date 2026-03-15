@@ -3,7 +3,7 @@ title: N+ Bike Shoe platform
 description: An additive-enabled performance cycling shoe product-service-system, made using an open-source 3D printer, a sewing machine and a vacuum sealer.
 link: /things/n-plus-bike-shoe/
 externalLink: https://last.lesoriginal.com/n-plus-signup
-date: 2016-06-01
+date: 2017-05-01
 category: goods
 tags: [things]
 layout: layouts/thing.njk
