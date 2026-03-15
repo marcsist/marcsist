@@ -651,6 +651,31 @@ img:not(#lightbox-img):hover {
   opacity: 0.85;
 }
 
+/* Photo grid — bento columns */
+.photo-grid {
+  column-count: 3;
+  column-gap: 4px;
+  margin-top: 24px;
+}
+
+.photo-grid picture {
+  display: block;
+  break-inside: avoid;
+  margin-bottom: 4px;
+}
+
+.photo-grid img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+@media screen and (max-width: 480px) {
+  .photo-grid {
+    column-count: 2;
+  }
+}
+
 /* Lightbox */
 #lightbox {
   position: fixed;

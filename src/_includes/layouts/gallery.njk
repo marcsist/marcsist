@@ -1,0 +1,13 @@
+---
+layout: layouts/base.njk
+---
+
+<style>
+  body { max-width: 900px; }
+</style>
+<div class="wrapper">
+  <div class="content">
+    {{ content | safe }}
+    {% include 'layouts/blocks/gallery.njk' %}
+  </div>
+</div>

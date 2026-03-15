@@ -1,0 +1,8 @@
+[
+  { "src": "./src/assets/photos/bike.jpg", "alt": "Trek mountain bike" },
+  { "src": "./src/assets/photos/lampshade.jpg", "alt": "Red polka dot lampshade" },
+  { "src": "./src/assets/photos/burmis.png", "alt": "Burmis tent structure" },
+  { "src": "./src/assets/photos/sema-cards.png", "alt": "Sema product cards" },
+  { "src": "./src/assets/photos/make-software.png", "alt": "Make Software Better design" },
+  { "src": "./src/assets/photos/sema-smp.png", "alt": "Sema SMP analytics dashboard" }
+]

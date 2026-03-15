@@ -83,7 +83,7 @@
 
         function open(index) {
           current = (index + imgs.length) % imgs.length;
-          img.src = imgs[current].src;
+          img.src = imgs[current].dataset.full || imgs[current].src;
           lb.classList.add('is-open');
           document.body.style.overflow = 'hidden';
         }
