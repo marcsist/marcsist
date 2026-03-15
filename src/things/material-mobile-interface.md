@@ -3,6 +3,7 @@ title: Material mobile interface
 description: A list-centric material makeover for the Sema platform
 link: /things/material-mobile-interface/
 date: 2019-06-01
+category: software
 tags: [things]
 layout: layouts/thing.njk
 ---

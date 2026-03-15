@@ -3,6 +3,7 @@ title: Sema Collections
 description: A simplified, actionable mobile product experience
 link: /things/sema-collections/
 date: 2019-11-01
+category: software
 tags: [things]
 layout: layouts/thing.njk
 chiptype: primary

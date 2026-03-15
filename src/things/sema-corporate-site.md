@@ -3,6 +3,7 @@ title: Sema corporate site
 description: Redesign of the corporate website with an emphasis on solution-selling and effective conversion. Built with Webflow.
 link: /things/sema-corporate-site/
 date: 2019-10-01
+category: software
 tags: [things]
 layout: layouts/thing.njk
 ---

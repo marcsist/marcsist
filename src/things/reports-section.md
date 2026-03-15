@@ -3,6 +3,7 @@ title: Reports Section
 description: Rebuilding a data analytics platform around a BI tool to speed up iteration and accommodate future development with modular page templates.
 link: /things/reports-section/
 date: 2019-08-01
+category: software
 tags: [things]
 layout: layouts/thing.njk
 chiptype: primary
