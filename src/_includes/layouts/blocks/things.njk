@@ -1,15 +1,42 @@
 <section class="things-section">
   <div class="section-label">// things</div>
 
+  <div class="filter-tabs">
+    <button class="active" data-filter="all">all</button>
+    <button data-filter="software">software</button>
+    <button data-filter="goods">goods</button>
+    <button data-filter="other">other</button>
+  </div>
+
   <div class="things-list">
     {%- for post in collections.things | reverse -%}
-    <div class="thing-item">
+    <div class="thing-item" data-category="{{ post.data.category }}">
       <a href="{{ post.data.link }}" class="thing-link">
         <span>{{ post.data.title }}</span>
         <span class="thing-desc"><span class="thing-desc-inner">{{ post.data.description }}</span></span>
-        <span class="arrow">→</span>
+        <span class="arrow">{% if post.data.link and ('http' in post.data.link) %}↗{% else %}→{% endif %}</span>
       </a>
     </div>
     {%- endfor -%}
   </div>
 </section>
+
+<script>
+  (function () {
+    const tabs = document.querySelectorAll('.filter-tabs button');
+    const items = document.querySelectorAll('.thing-item');
+
+    tabs.forEach(function (tab) {
+      tab.addEventListener('click', function () {
+        const filter = this.dataset.filter;
+
+        tabs.forEach(function (t) { t.classList.remove('active'); });
+        this.classList.add('active');
+
+        items.forEach(function (item) {
+          item.style.display = (filter === 'all' || item.dataset.category === filter) ? '' : 'none';
+        });
+      });
+    });
+  })();
+</script>

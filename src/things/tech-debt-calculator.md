@@ -3,6 +3,7 @@ title: Tech Debt calculator
 description: Help customers and prospects put a dollar value on improving code quality
 link: /things/tech-debt-calculator/
 date: 2019-12-01
+category: software
 tags: [things]
 layout: layouts/thing.njk
 chiptype: primary

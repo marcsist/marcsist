@@ -3,6 +3,7 @@ title: Bicycle Pannier bag
 description: Fastpacking pannier bag I made to learn about bonded no-sew zippers.
 link: /things/bicycle-pannier-bag/
 date: 2017-09-01
+category: goods
 tags: [things]
 layout: layouts/thing.njk
 ---

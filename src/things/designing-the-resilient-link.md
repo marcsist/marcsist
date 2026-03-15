@@ -4,6 +4,7 @@ description: A proposed sustainable food system based on 3 types of food hubs li
 link: /things/designing-the-resilient-link/
 externalLink: https://dplusfa.com/portfolio/designing-the-resilient-link/
 date: 2018-03-01
+category: other
 tags: [things]
 layout: layouts/thing.njk
 ---
