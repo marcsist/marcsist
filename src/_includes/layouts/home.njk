@@ -22,7 +22,23 @@ templateClass: tmpl-home
       <div class="view-all"><a href="/notes">view all →</a></div>
     </section>
 
-    {% include 'layouts/blocks/things.njk' %}
+    <section class="things-section">
+      <div class="section-label">// things</div>
+      <div class="things-list">
+        {%- for post in collections.things | reverse -%}
+          {%- if loop.index <= 10 -%}
+          <div class="thing-item">
+            <a href="{{ post.data.link }}" class="thing-link">
+              <span>{{ post.data.title }}</span>
+              <span class="thing-desc">{{ post.data.description }}</span>
+              <span class="arrow">→</span>
+            </a>
+          </div>
+          {%- endif -%}
+        {%- endfor -%}
+      </div>
+      <div class="view-all"><a href="/things">view all →</a></div>
+    </section>
 
   </div>
 </div>
