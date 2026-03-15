@@ -1,6 +1,6 @@
 ---
 title: Reports Section
-description: Rebuilding a data analytics platform around a BI tool to speed up iteration and accommodate future development with modular page templates.
+description: Modular analytics platform rebuilt around a BI tool for faster iteration
 link: /things/reports-section/
 date: 2019-08-01
 category: software
@@ -27,21 +27,21 @@ chiptype: primary
 
 ## Background
 
-Sema Software is bringing transparency to software development with new and established metrics for people, process and code. Serving organizations and fortune 500 companies, they offer professional services — individualized reporting, technical due diligence and recommendations catered to the client. The proprietary metrics and data Sema generates is accessed through a web platform.
+Sema makes code quality and development analytics for Fortune 500 companies, delivered through a web platform alongside professional services — individualized reporting, technical due diligence and tailored recommendations.
 
 ## Phase 1 — Agile MVP
 
-Adding the first report. In order to test the functionality of a BI tool integration we added a single tab called Reports. It housed a white-label embedded of a Mode Analytics report. All users saw the same report with data specific to their organization. It launched with 2 queries as an MVP and grew to over a dozen queries and graphs, css navigation and tooltips — all with minimal engineering resources.
+To test BI tool integration, we added a single Reports tab housing a white-label Mode Analytics embed. All users saw the same report with org-specific data. It launched with 2 queries as an MVP and grew to over a dozen queries and graphs, CSS navigation and tooltips — all with minimal engineering resources.
 
 ![White-label embed reports section using built-in filters, styled with CSS](/public/things/reports-section/Sema_Reports.png)
 
 White-label embed reports section using built-in filters, styled with CSS
 
-The page was extended with the support of Professional Services, who began preparing custom reports in the BI tool, and the product & design team (just me). I was able to add queries and graphs, navigation and tooltips, and style the report using the native html/css editor in the BI tool.
+Professional Services began preparing custom reports in the BI tool, and I — the entire product & design team — added queries, graphs, navigation, tooltips and styling through the native HTML/CSS editor.
 
 The embedded reports and data lake proved a big win as engineering resources were limited. It became the most visited page, had the highest engagement, and user feedback was clear — more of this.
 
-The BI tool was a bet that played out nicely. The company had let a lot of staff go and engineering resources were spread very thin. The progress on the reports made in Phase 1 was done with minimal engineering effort and we were able to add new reports even faster than our weekly production release cadence. The intuitive interface allowed for myself, researchers, and analysts to contribute to the engineering backlog to complete an exceptional body of work allowing analysts to do everything within the BI tool.
+The BI tool bet paid off. Engineering resources were spread thin, but Phase 1 progress required minimal engineering effort — we shipped new reports faster than our weekly release cadence. The intuitive interface let me, researchers and analysts contribute directly, keeping analysts entirely within the BI tool.
 
 ## Things go well until they don't
 
@@ -60,7 +60,7 @@ We could see a never ending game of catch up, adding report metrics to core plat
 
 This is where lightning struck — a chance to clear house, simplifying the product experience, reducing maintenance and maximize value of the integrated BI tool.
 
-I was particularly proud of this solution from both a design and product management effort. A flexible and extensible reports that makes full use of the BI tool and it's white-label embeds, increasing delivery speed and reducing engineering efforts.
+This solution worked on both the design and product management levels — a flexible, extensible reports experience that makes full use of the BI tool's white-label embeds, increasing delivery speed and reducing engineering effort.
 
 We had a chance to replace all the current navigation pages (3 top level, 5 sub-pages + project selector) with 3 functional components;
 

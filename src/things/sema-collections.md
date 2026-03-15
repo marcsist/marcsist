@@ -1,6 +1,6 @@
 ---
 title: Building an iteration engine with Collections
-description: An exploratory prototype imagining a new core product experience for the Sema Code Quality Platform — an actionable layer to increase user engagement and drive insights from technical debt data.
+description: Exploratory prototype for a new core product experience — an actionable layer to drive user engagement and insights from technical debt data.
 link: /things/sema-collections/
 date: 2019-11-01
 category: software

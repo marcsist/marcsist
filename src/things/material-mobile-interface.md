@@ -8,7 +8,7 @@ tags: [things]
 layout: layouts/thing.njk
 ---
 
-A straightforward design for development Material Design makeover of our web app. List-centric mobile first prototype mostly using stock material components available in Angular Material.
+A Material Design makeover of the Sema web app, designed for development. List-centric, mobile-first, built mostly with stock Angular Material components.
 
 **Challenges**
 
@@ -35,7 +35,7 @@ Layed it all out in Miro and got input from all teams
 
 ### Home screen & sidebar
 
-**People commiting code**. At a high level, that's what Sema is looking at. It's difficult to seperate them, since when you talk about code, it's a reflection of who wrote it (and who can fix it) and vice versa— people's data is tied to the code they write.
+**People commiting code**. At a high level, that's what Sema is looking at. It's difficult to separate them, since when you talk about code, it's a reflection of who wrote it (and who can fix it) and vice versa— people's data is tied to the code they write.
 
 Our navigation reflects how you step into the information;
 
@@ -47,7 +47,7 @@ Our navigation reflects how you step into the information;
 
 Home screen
 
-The beneath these are two sections for other pages (whether it's a repository or a single line change, an offshore team or an individual)
+Beneath these are two sections for other pages (whether it's a repository or a single line change, an offshore team or an individual)
 
 - Starred — where users have starred important items they frequently visit - current initiatives or direct reports
 - Recent — pages that have been recently visited

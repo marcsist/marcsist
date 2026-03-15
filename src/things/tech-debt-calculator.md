@@ -11,7 +11,7 @@ chiptype: primary
 
 ![](/public/things/tech-debt-calculator/TDC_marketing.png)
 
-The tech debt calculator was a configurable tool that placed a dollar value on technical debt in a code base. It launched as a standalone free experience for sales outreach, and an in-product feature available to existing customers.
+A configurable tool that puts a dollar value on technical debt in a codebase. It launched as a standalone free experience for sales outreach, and an in-product feature for existing customers.
 
 ### New Users
 
@@ -69,4 +69,4 @@ Tabs on the component lets users drill into categories that make up their techni
 
 Adding more control to the file list & a goal slider using the chart.js design
 
-Based on user feedback, we designed an easy way to hide certain types of files and fileytpes, search a specific file, and set a persistant goal marker. The graph and goal marker were designed within the constraint of the current library *chart.js.*
+Based on user feedback, we designed an easy way to hide certain types of files and file types, search a specific file, and set a persistent goal marker. The graph and goal marker were designed within the constraints of *chart.js.*

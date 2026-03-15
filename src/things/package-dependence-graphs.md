@@ -1,6 +1,6 @@
 ---
 title: Package Dependence Graphs
-description: Interactive package visualized for object-oriented code
+description: Interactive package visualizer for object-oriented code
 link: /things/package-dependence-graphs/
 date: 2019-07-01
 category: software
@@ -16,9 +16,9 @@ The Dependency Graph is an interactive code visualization for browsing package r
 
 This feature was useful to architects and engineering leaders getting familiar with new-to-them codebases (usually an incoming leader or acquisition) as a means to view package dependencies and work through code.
 
-The original implementation was created by the same engineer who built the backend engine that generated the json file. It lauched with the initial web app to intrigue architects and show the level of detail our engine parsed the code. It was a static GraphViz DOT chart with some color indicating number of dependencies. This was efficient but scaled poorly, sized nodes in a way that was easy to misunderstand, and with especially complex code, had a tendency to be an overwhelming beast of a graph.
+The original was a static GraphViz DOT chart built by the same engineer who wrote the backend engine. It launched with the web app to show architects the depth of our code parsing. Efficient, but it scaled poorly — node sizing was easy to misunderstand and complex codebases turned into an overwhelming beast of a graph.
 
-I collaborated directly with Kanikar, a full stack engineer with solid D3.js experience, and made use of our internal engineers and developers, as well as user interviews from customers and prospects.
+I partnered with Kanikar, a full stack engineer with solid D3.js experience, drawing on internal engineering input and customer interviews.
 
 The primary use cases:
 
@@ -30,7 +30,7 @@ The primary use cases:
 
 The initial launch was the implementation of D3.js graphs to replace the DOT graph. We chose a force-directed network graph to lay out the complex codebases without overlaps, which was visually familiar to the original graph, and a treemap which allowed for a more at-a-glance view of the information suitable for dashboards.
 
-We implemented it using a default color scheme from D3.js and it was visually not a great fit with the page, and since the colors always changed it was confusing to customers. It was something we expected to change, but due to other engineering constraints put off for a bit longer than we would have liked. I don't even have any screenshots of this component, but it looked similar to this IKEA fabric.
+We shipped it with the default D3.js color scheme, which clashed with the page and confused customers since the colors shifted each time. We knew it needed to change but engineering constraints pushed it down the list. I don't even have screenshots — but it looked something like this IKEA fabric.
 
 <!-- TODO: missing image: Untitled.png -->
 
@@ -50,7 +50,7 @@ Treemap
 
 Force-directed layout Network Graph
 
-Despite the insano colors, the feature it was pretty well liked. We had customers who printed it out to track progress. Cool to hear, but as a designer and product manager that felt like a failure because they weren't getting more of the team into the platform regularly. We carved out a month to work iteratively on an updated and more interactive dependence graph experience.
+Despite the wild colors, customers liked it. Some even printed graphs to track progress — which was flattering until I realized it meant they weren't using the platform regularly. That insight drove us to carve out a month for a more interactive dependence graph experience.
 
 - Updated the text layout and node color to be more legible. We replaced all the crazy colors with blue and customers appreciated the 10x visual harmony it brought to the screen
 

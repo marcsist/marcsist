@@ -37,7 +37,7 @@ Research Binder
 
 # Protective gear research project
 
-After flexing my research muscle through interviews, field observation, market analysis, extensive literature review and incidence reports, the issue came into focus. **In survivable seaplane incidents over water passengers often egress the plane without a life preserver**. Drowning is the leading cause of death in this situation, and even in the event of a successful initial egress, drowning can occur when occupants attempt to reach stowed life preservers in the cabin rear and under seats.
+Through interviews, field observation, market analysis, extensive literature review and incident reports, the issue came into focus. **In survivable seaplane incidents over water passengers often egress the plane without a life preserver**. Drowning is the leading cause of death in this situation, and even in the event of a successful initial egress, drowning can occur when occupants attempt to reach stowed life preservers in the cabin rear and under seats.
 
 > We want to find people and the chance of their survival without the life jacket is very poor,
 
@@ -87,7 +87,7 @@ The bright coloured pouch ensures passengers have noticed its location throughou
 
 ### Cost Competitive
 
-I then refined the design to the point of brilliant simplicity (read: really simple), because current pouches are light and manufacturable. I optimized the pattern for high-yield and minimal waste cutting. This part of the process felt like my own undoing as I simplified and reduced the deliverable of a major project. But it was the only way the solution would be realistic and deployable for commercial applications. I used ultrasonic welding technology but in production an RF-welding form would be ideal.
+I refined the design to the point of brilliant simplicity, because current pouches are light and manufacturable. I optimized the pattern for high-yield and minimal waste cutting. This part of the process felt like my own undoing as I simplified and reduced the deliverable of a major project. But it was the only way the solution would be realistic and deployable for commercial applications. I used ultrasonic welding technology but in production an RF-welding form would be ideal.
 
 ### **Round 1**
 

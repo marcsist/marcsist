@@ -1,6 +1,6 @@
 ---
 title: Bicycle Pannier bag
-description: Fastpacking pannier bag I made to learn about bonded no-sew zippers.
+description: Slim pannier bag prototyping bonded no-sew zipper construction
 link: /things/bicycle-pannier-bag/
 date: 2017-11-01
 category: goods
@@ -10,7 +10,7 @@ layout: layouts/thing.njk
 
 ## No-sew tech prototype
 
-This bag was an opportunity for me to try out some BEMIS no-sew zipper placements and laser cut patterning.
+A prototype to test BEMIS no-sew zipper placements and laser-cut patterning.
 
 The idea behind the design is a pannier bag that's not as bulky or cavernous as typical panniers.
 
@@ -18,7 +18,7 @@ The idea behind the design is a pannier bag that's not as bulky or cavernous as 
 - Extend storage with exterior straps & lashing points
 - Quick-access exterior pockets
 
-This was a fun build in a short time, and some ideas of the design are even
+A quick build with ideas that carried forward into later projects.
 
 ![A slim but extensible pack for overnighters with pannier racks](/public/things/bicycle-pannier-bag/Pannier_s2-2.jpg)
 

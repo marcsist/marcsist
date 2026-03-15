@@ -1,6 +1,6 @@
 ---
 title: Designing the Resilient Link
-description: A proposed sustainable food system based on 3 types of food hubs linking community, service providers and industrial producers.
+description: Sustainable food system linking communities to producers through regional hubs
 link: /things/designing-the-resilient-link/
 externalLink: https://dplusfa.com/portfolio/designing-the-resilient-link/
 date: 2016-07-01
@@ -11,11 +11,11 @@ layout: layouts/thing.njk
 
 # **Design + Food Atelier** research group
 
-A multidisciplinary research group looking at food challenges through the lens of design. I was a part of the inaugural project as a researcher and project manager.
+A multidisciplinary research group looking at food challenges through the lens of design. I led research and project management for the inaugural project.
 
 [*Designing The Resilient Link*](https://dplusfa.com/portfolio/designing-the-resilient-link/) was a sustainable food systems research project & proposal published for the agriculture industry and community developers in SW British Columbia.
 
-Along with a team of fellow researchers and mentors we proposed a system of hubs to connect industry, community and service providers. I contributed to research, concept development, document layout dataviz, and illustrations.
+With a team of researchers and mentors, we proposed a system of hubs connecting industry, community and service providers. I contributed research, concept development, dataviz and illustrations.
 
 ![Concept illustration - 3 types of food hubs — *links* to connect industry, service providers and communities](/public/things/designing-the-resilient-link/resilient_link.png)
 

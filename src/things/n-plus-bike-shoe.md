@@ -1,6 +1,6 @@
 ---
 title: N+ Bike Shoe platform
-description: An additive-enabled performance cycling shoe product-service-system, made using an open-source 3D printer, a sewing machine and a vacuum sealer.
+description: 3D-printed cycling shoe platform with swappable outsoles for riding and hiking
 link: /things/n-plus-bike-shoe/
 externalLink: https://last.lesoriginal.com/n-plus-signup
 date: 2017-05-01
@@ -26,11 +26,11 @@ chiptype: primary
 
 N+ is a bicycle shoe designed to provide a stiff pedaling platform while maintaining walkability off the bike. It's also an open-source design that's modular, serviceable and can be produced with readily available tools and techniques. It's a project exploring new consumer models of ownership and challenging expectations around the product life cycle.
 
-> N+ Platform was the final project of my Bachelor of Design - Product Design program in 2016 - read the Thesis Report
+> Bachelor of Design thesis project, 2016 - read the Thesis Report
 
 # Research
 
-For this research project I was focused (okay not strictly focused as you will see...) on variable stiffness outsoles. The paradox I set out to solve — a walking/hiking shoe isn't ideal for biking, and a bike shoe is notoriously clumsy to walk in.
+The core research focused on variable stiffness outsoles. The paradox: a walking/hiking shoe isn't ideal for biking, and a bike shoe is notoriously clumsy to walk in.
 
 ![Early research posters identifying challenge & opportunities](/public/things/n-plus-bike-shoe/BA_research_poster.jpg)
 
@@ -71,7 +71,7 @@ As a bonus, non-traditional construction makes for a more sustainable extended p
 
 ## Additive-Enabled
 
-Exploring the potential of digital manufacturing, I've used the term 'additive-enabled' because the composite core us made using a 3D printed mold and 3D printed threaded inserts to give shape to the core. The textile uppers are produced with good old fashioned textile technologies.
+I use the term 'additive-enabled' because the composite core is made using a 3D printed mold and 3D printed threaded inserts. The textile uppers are produced with good old fashioned textile technologies.
 
 The frame (heel & toe), outsole (heel & toe), pedal inserts (platform & SPD) and toe-guard were all 3D printed. The last was also printed.
 
@@ -85,7 +85,7 @@ Close-up of 3D printed TPU outsole
 
 ## Open-source Platform
 
-So why a platform? What does that even mean? This project wouldn't have happened if it weren't for the RepRap project and proliferation of affordable 3D printing. I released the designs and project with an open source license because it would allow for a few interesting possibilities;
+This project wouldn't have happened without the RepRap project and affordable 3D printing. I released the designs under an open source license to enable a few interesting possibilities;
 
 - People creating and sharing patterns and designs and components for free or profit
     - It would allow space for cottage makers to produce textile uppers, an interesting challenge and SKU
