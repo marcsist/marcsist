@@ -1,6 +1,6 @@
 ---
 title: filo cookware
-description: A fine line of cookware designed for a student competition
+description: A fine line of cookware designed for a TVS Italia competition
 link: /things/filo-cookware/
 externalLink: https://www.behance.net/gallery/37454451/filo
 date: 2016-07-01
@@ -35,7 +35,7 @@ sketches
 
 ### First Submission
 
-A few weeks into the competition, leadership from TVS Italia came and we had a chance to pitch our progress so far. This cast aluminium design got some of the design intent across, and the presentation and direction were entertaining enough. I learned a press-formed pan was easier and cheaper for them to manufacture, whereas casting was cost prohibitive and not their preference.
+At the midpoint review, I pitched this cast aluminium direction to TVS Italia leadership. Their feedback was clear: press-forming over casting — cheaper to manufacture and better suited to their production line.
 
 ![](/public/things/filo-cookware/untitled.30.jpg)
 

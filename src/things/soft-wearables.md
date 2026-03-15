@@ -1,6 +1,6 @@
 ---
 title: Soft Wearables
-description: Shirt and sensors detect posture and movement through a threadlike sensor
+description: Sensor-embedded garments detecting posture and movement with threadlike capacitive sensors
 link: /things/soft-wearables/
 date: 2018-06-01
 category: goods
@@ -23,7 +23,7 @@ chiptype: primary
 
 ---
 
-Lending softgoods prototyping and design thinking expertise to one of Western Canada's largest mechatronics research labs. Worked with brilliant engineers to create a product using a novel threadlike sensor.
+I brought softgoods prototyping expertise to MENRVA, a mechatronics research lab at Simon Fraser University, working with their engineers to productize a novel threadlike sensor.
 
 ## Sensor Patches
 
@@ -84,7 +84,7 @@ After coming to understand the material properties of the sensor, constraints we
 - laser cut patches with sensors embedded were assembled, stitched to the tracing, and bonded in place on the exterior of the garment
 - waffle looking patches were designed to avoid direct heat on the sensor and not restrict stretch in that region the patch is applied
 
-> Sadly, no pictures of earlier prototypes, or the garment with attached sensor patches is available. They were bright pink waffle looking things and were awesome.
+> No pictures of earlier prototypes survived — they were bright pink waffle-looking things and they were awesome.
 
 ![Tracing - Inside back](/public/things/soft-wearables/menrva_lab_marcs_(4_of_15).jpg)
 

@@ -1,6 +1,6 @@
 ---
 title: Sema Code Quality Platform
-description: Redesigning an analytics platform to help organizations fight tech debt, one of the biggest drags on software development.
+description: Analytics platform redesign to surface and reduce organizational tech debt
 link: /things/sema-collections/
 date: 2019-11-01
 category: software
@@ -31,11 +31,11 @@ chiptype: primary
 
 Sema makes code quality and development analytics for software development teams delivered through Angular web app, along with professional services and written reports. Their comprehensive metrics support digital transformation, technical due diligence, continuous improvement and software maintenance.
 
-As product manager and design leader, I worked directly with research and engineering. I was the VP of Product's first hire, joining shortly before the launch of the web app. It was my first experience working on software and in a startup. For the last 5 months I was the product leader.
+I joined as the VP of Product's first hire, shortly before the web app launch, and worked directly with research and engineering. For the last 5 months I led product.
 
 ## About the Sema Maintenance Platform
 
-The platform had seen steady feature improvements since it's initial launch. This included whole new functionality, additional programming language support, more graphs and tables, a reports section. It was intriguing and useful info but overwhelming. There was no flow and users couldn't see clear insights and how best to use this new data in their software development workflow.
+Since launch, the platform had accumulated new functionality, language support, graphs, tables and a reports section. Useful data, but overwhelming — no flow, no clear insights, and no guidance on how to use it in a software development workflow.
 
 ![Overview page](/public/things/sema-collections/platform-overview.png)
 
@@ -71,7 +71,7 @@ To develop the product roadmap, myself & the VP of Product mapped out 3 overarch
 
 ## Analytics alone doesn't show connections and context
 
-As a product manager I spent a great deal of time learning from engineering and research how our database was structured and how different datapoints and metrics were connected. Much more than a user might guess by looking at the product interface, where deep data is spread thin across pages.
+I invested heavily in understanding how our database was structured and how datapoints connected across metrics — far more depth than the product interface revealed, where deep data was spread thin across pages.
 
 There was no continuity, and the places people expected they could click and drill down didn't do anything of the sort. I started trying to string together data so users could explore it in any direction.
 
@@ -128,7 +128,7 @@ My last piece of work before departing from Sema was this prototype — the prod
 
 Striving for consistent layouts and patterns for an extensible front-end
 
-I built this over a weekend tying together learning and ideas we had built towards into a single experience. I reused existing UI components wherever possible to save time.
+I built this prototype over a weekend, synthesizing 18 months of research, ideas and team learnings into a single experience, reusing existing UI components wherever possible.
 
 Because it builds from my experiences as both product manager and design leader, it is designed for development. It integrates the most promising research and engineering work and helps users to engage with technical debt in a way that's never been done before.
 

@@ -8,7 +8,7 @@ layout: layouts/thing.njk
 chiptype: primary
 ---
 
-A class project for a 3rd year studio course 'Protective Gear' — we designed a purpose built work pant for a growing local business. We balanced durability and simplicity to suit junk hauling and removal. Task specific features create a unique look for a uniform that distinguishes the client and carries over to other uniform pieces. Acted as project manager, actively involved while coordinating the collective efforts of my eight other classmates.
+Purpose-built work pants designed for a growing local junk removal business. We balanced durability and simplicity for hauling, with task-specific features that double as a distinctive uniform. I project-managed a team of nine through a 3rd year studio course, coordinating design, prototyping and client delivery.
 
 ![finished garment](/public/things/workpant/finished-garment.jpg)
 
@@ -28,6 +28,6 @@ details
 
 technical illustration and final garment
 
-As project manager I coordinated the various tasks amongst the team and established the framework for a unified direction. I held individuals accountable to their tasks, and the team accountable to our objective. Tasks were broken down to maximize team proficiencies. I compiled the concept document to relay intention to the client. Proactively monitored productivity and timeline while keeping spirits up.
+As project manager I set the direction, broke tasks down to play to team strengths, and kept everyone accountable. I compiled the concept document for the client and monitored productivity and timeline throughout.
 
 **Project Contributors:** Alma Tabareh, Jason Guo, Sherry Chang, Stephen de Gouveia, Ivan Medina, Karl Friesen, Cody Botto-Brunsmann, Sandra Manrique, Marc Wilkinson

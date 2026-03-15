@@ -10,13 +10,13 @@ layout: layouts/thing.njk
 
 The **Activity Feed** was designed to drive up day-to-day usage of the product.
 
-The *Sema Maintenance Platform* was a useful tool for engineering leaders and PE partners to get a high-level view of development activity across the organization, but because our web app was always paired with regular printed summary reports from Professional Services, **customers avoided looking at the product instead waiting on their next report to be sent out.**
+Engineering leaders and PE partners valued *Sema Maintenance Platform* for its high-level view of development activity, but because the web app was always paired with printed reports from Professional Services, **customers avoided the product and waited for their next report instead.**
 
-Because Sema calculated commit-by-commit analytics on repositories, we were able to show both the activity and impact. We build a flexible and extensible activity feed component to display increasingly in-depth activity types.
+Because Sema calculated commit-by-commit analytics on repositories, we could show both the activity and its impact. We built a flexible, extensible activity feed to display increasingly detailed activity types.
 
 ## Version 1
 
-Because of the nature of this product bet we wanted to launch a light feature with a couple of 'low hanging' activities. The UI made use of an existing Material Design list component that we had already been using. Using our customer research database, interviews and acquired domain knowledge we did a brainstorm of the potential 'activities' we could detect and display.
+We wanted to launch light with a couple of low-hanging activities, reusing an existing Material Design list component. I mapped out potential activity types from our customer research, interviews and domain knowledge.
 
 ![mocking up potential activity cards](/public/things/activity-feed-for-smp/possible_activities.png)
 
@@ -51,7 +51,7 @@ The activity feed was a modal that could be accessed from most screens in the pr
 
 ### Menu
 
-Some initial functinality of the activity feed included the ability to search, and show/hide a repository from your main feed.
+Initial functionality included the ability to search, and show/hide a repository from your main feed.
 
 When the feed was opened from within a project, results would filter to that project only, to remove that filter, users click *View All*
 
@@ -61,7 +61,7 @@ Menu for the activity feed
 
 ## More Features
 
-Future tuneability was an important consideration since our users could be developers, architects, engineering leaders, or executives. They would prioritize different information. Without overthinking it, I did some light exploration of how these future features might work into the design when it came up. Pretty agile stuff, for sure.
+Future tuneability was important — our users ranged from developers to executives, each prioritizing different information. I explored how future features might work into the design as they came up.
 
 ![Potential components for future functionality](/public/things/activity-feed-for-smp/roadmap_stuff.png)
 
