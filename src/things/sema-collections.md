@@ -1,6 +1,6 @@
 ---
-title: Sema Code Quality Platform
-description: Redesigning an analytics platform to help organizations fight tech debt, one of the biggest drags on software development.
+title: Building an iteration engine with Collections
+description: An exploratory prototype imagining a new core product experience for the Sema Code Quality Platform — an actionable layer to increase user engagement and drive insights from technical debt data.
 link: /things/sema-collections/
 date: 2019-11-01
 category: software
@@ -9,191 +9,126 @@ layout: layouts/thing.njk
 chiptype: primary
 ---
 
-![Sema Code Quality Platform — Teams, Collections, Projects and contributor views](/public/things/sema-collections/hero-overview.jpg)
+![Building an iteration engine with Collections — Sema platform hotspots view](/public/things/sema-collections/platform-hotspots-view.png)
 
 ### Challenges
 
-- Complex analytics, poor user flow, minimal interaction
-- Overwhelming metrics discourage app usage
-- Professional Services written reports were cannibalizing usage of the platform
-- R&D priorities split between professional services & the web app, creating duplicated effort and inconsistent experience
+- The web app had poor daily usage. Users found our metrics useful, and engaged with the regular reporting but struggled to find actionable insights in the tables and graphs
+- Generate actionable insights from the data
+- Give users a reason to engage regularly
+- More user input to feed product development
 
 ### Outcomes
 
-- Redesigned more explorable information architecture and UX
-- A new core interaction to integrate product into software development life cycle
-- An extensible mechanism for delivering actionable recommendations within the app
-- Wrangle the analytics platform and org. onto a common BI tool integration
+- Prototype showcasing a significant reorganization of the current web app and added functionality
+- Consolidate current pages into a Reports section
+- A mechanism for collecting and tracking team efforts against technical debt issues
+- Reduce complex suite of metrics to a single score, Technical Debt ($), that can be shared between technical and business teams
 
 ---
 
-## Background
+## Finding objectively problematic code
 
-Sema makes code quality and development analytics for software development teams delivered through Angular web app, along with professional services and written reports. Their comprehensive metrics support digital transformation, technical due diligence, continuous improvement and software maintenance.
+With all the metrics we presented, users couldn't clearly see where to begin or what was important. The file-level metrics were displayed across numerous columns of a table. Subjective ranges of different metrics was hard to ground users understanding in.
 
-As product manager and design leader, I worked directly with research and engineering. I was the VP of Product's first hire, joining shortly before the launch of the web app. It was my first experience working on software and in a startup. For the last 5 months I was the product leader.
+We were developing two subsequent bodies of work — Technical Debt ($) which we had developed and launched in product, and Hotspots which research had developed. Brendan, a founding scientist at Sema, created a defensible aggregate metric called hotspots to identify the most problematic file. It answers a question overwhelmed customers would commonly ask: *so... what should I fix first?*
 
-## About the Sema Maintenance Platform
+I mocked a prototype database in Notion using data from the hotspots research output. Instead of the quantitative abstract number, I tied the 'hotspot' ranking to a dollar value — Technical Debt ($) — something we had already quantified and built in the product that resonated with users.
 
-The platform had seen steady feature improvements since it's initial launch. This included whole new functionality, additional programming language support, more graphs and tables, a reports section. It was intriguing and useful info but overwhelming. There was no flow and users couldn't see clear insights and how best to use this new data in their software development workflow.
+![Progressive disclosure of a simplified view displaying a single weighted aggregate metric score for each file, hiding other layers of detail away. (Notion prototype)](/public/things/sema-collections/notion-prototype-hotspots.png)
 
-![Overview page](/public/things/sema-collections/platform-overview.png)
+Progressive disclosure of a simplified view displaying a single weighted aggregate metric score for each file, hiding other layers of detail away. (Notion prototype)
 
-![Project overview](/public/things/sema-collections/platform-project-overview.png)
+![A semantic stepper dialogue to set repository-specific priorities (weighting) so users don't have to understand the weighting themselves, increasing confident adoption of the product (typeform prototype)](/public/things/sema-collections/typeform-prototype-stepper.png)
 
-![Architecture metrics](/public/things/sema-collections/platform-architecture-metrics.png)
+A semantic stepper dialogue to set repository-specific priorities (weighting) so users don't have to understand the weighting themselves, increasing confident adoption of the product (typeform prototype)
 
-![Linter summary](/public/things/sema-collections/platform-linter-summary.png)
+Users could look through a list of files scored based on repo-specific priorities. Setting priorities was done on a call with Professional Services, but here I showed the process as a stepper for repeatability.
 
-![Contribution details](/public/things/sema-collections/platform-contribution-details.png)
+Below the list of Hotspots, I created a database called Collections. An engineering manager using our platform might say "we want to clean up all the duplicate code, it's a big source of technical debt and slows us down" and create a collection of the top files with duplicates that they're willing to work on at that time. They could assign out that collection to a team or user, or just strategically work it into sprints.
 
-![Package dependence browser](/public/things/sema-collections/platform-package-dependence.png)
+**Takeaways**
+- Leveraged an existing metric Technical Debt ($) by merging two bodies of work
+- Decided to prioritize Technical Debt ($) as the key indicator of code base health
+- First prototype showing Collections
 
-![One of many data tables](/public/things/sema-collections/platform-data-tables.png)
+## The case for Collections
 
-## Enterprise sales of professional services, reports and a web app
+Sema's web app measures dozens of metrics from client code and displays that data with graphs and tables. Without key tasks for users to complete, in-site analytics didn't have many decisive events to pick up.
 
-Our product service system included targeted reports generated by analysts on the Professional Services team with the support of our researchers. Customer engagements were very hands on, professional services team onboarding users, adding their repositories and performing health checks at about a monthly cadence.
+We had failed to build a feedback mechanism that supports user-driven product roadmapping. Prospects and paying users were intrigued, but unclear on how the analytics were actionable.
 
-In practice, busy software teams couldn't make time to learn all the metrics and go through the tables and graphs in our product scraping value. Expecting a report and scheduled call to talk through it, clients tended to wait for that rather than spend time in the product. Our analytics showed only a few customers actually checking regularly, and only for short periods.
+![Sema platform showing Technical Debt ($) file list](/public/things/sema-collections/platform-tech-debt-list.png)
 
-This impacted the users relationship with the product, and was a labor intensive bottleneck. We had to find a way to productize professional services to replicate the value users were finding in a scalable product.
+## Look but don't touch
 
-## Three user journeys
+The product had a list of files and the Technical Debt ($) value which toggled to show an itemized breakdown of where that debt came from. Feedback was positive, but still just something to look at, not interact with. We were headed in the right direction, but needed to go further.
 
-To develop the product roadmap, myself & the VP of Product mapped out 3 overarching user journeys based on feedback from the pilot, early demos and interviews.
+## One small interaction leads to another
 
-![Architecture / Code Journey — the 'what' drilldown](/public/things/sema-collections/journey-architecture.png)
+I thought we could add some interactivity in a pretty agile way by adding checkboxes. Somehow, I mocked it up in Angular.
 
-![Something is Wrong! — an SMP user journey](/public/things/sema-collections/journey-something-wrong.png)
+![Technical Debt ($) toggle view showing itemized breakdown per file](/public/things/sema-collections/platform-tech-debt-toggle.png)
 
-![Staffing Discovery — Executive and Manager journey](/public/things/sema-collections/journey-staffing-discovery.png)
+It's pretty amazing how much this little checkbox says. We detect an anomaly, you check the box. Simple. It could mean a few things:
 
-## Analytics alone doesn't show connections and context
+- 'I agree, that is a problem we care about'
+- 'This is something I want to look into'
+- 'We need to fix this'
+- 'This has been addressed'
 
-As a product manager I spent a great deal of time learning from engineering and research how our database was structured and how different datapoints and metrics were connected. Much more than a user might guess by looking at the product interface, where deep data is spread thin across pages.
+## How might we organize items to make better software & teams?
 
-There was no continuity, and the places people expected they could click and drill down didn't do anything of the sort. I started trying to string together data so users could explore it in any direction.
+The above initial version would have been a quick way to get talking with users about action. It's a scrappy MVP for an agile team, but I worked through a few ideas to establish a better direction and potential roadmap. These are rough sketches from my notebook so excuse the mess!
 
-### Balsamiq wireframe (~3 months in the role)
+![Users should be able to create collections, we might suggest some action for them. How might we grow towards smarter suggestions?](/public/things/sema-collections/sketch-collections-suggestions.jpg)
 
-![Balsamiq wireframe showing early data exploration concept](/public/things/sema-collections/balsamiq-wireframe.png)
+![Thinking about how users might use the platform to build plans, export to stakeholders or share in a tool like Jira](/public/things/sema-collections/sketch-collections-jira.jpg)
 
-![Balsamiq wireframe — language view showing JavaScript codebase metrics, velocity and dependencies](/public/things/sema-collections/balsamiq-language-view.png)
+![Exploring how users could create lists of data points and assign them for action or review](/public/things/sema-collections/sketch-collections-lists.jpg)
 
-![Balsamiq wireframe — file view for capt_node.js showing contributor engagement and frequency](/public/things/sema-collections/balsamiq-file-view.png)
+## Minimal mobile prototype
 
-![Balsamiq wireframe — contributor profile for Sangar Git showing languages, notes and collaborators](/public/things/sema-collections/balsamiq-contributor-view.png)
+Add powerful functionality and simplify the product experience.
 
-A simple user journey illustrating how a user might click through data:
+![Minimal mobile prototype — Collections interaction](/public/things/sema-collections/checkbox-prototype.png)
 
-- Weekly report shows an unusual increase in Javascript files →
-- Drill into Javascript to see a large new package has been imported →
-- Look into package `capt_node.js` and see who is working on it →
-- Follow up with the developer or manager tied to that package.
+Build a feedback that helps customers track our benefit and accomplish something through app interaction.
 
-Feedback from product and professional services teams lead to an important insight; our data structure and platform weren't supporting users with contextual exploration.
+### A simple feedback loop for users
 
-### Sema Modal (~8 months in the role)
+Closing a simple feedback loop was important from both an interaction and product management success. This lets users see clearer more direct utility from the product and gives us something to optimize.
 
-Thinking about building simpler things that are easier to maintain, I mapped out potential data points presented as a single modal. Without resolving any of the details on these screens, I added to a growing list of contexts or data points we could create for users.
+![Mobile prototype showing collections and progress tracking](/public/things/sema-collections/mobile-prototype-1.png)
 
-![Contextual modals could be used to look at activities, analytics reports, teams, languages, files, commits, etc.](/public/things/sema-collections/sema-modal.png)
+## Building trust
 
-Contextual modals could be used to look at activities, analytics reports, teams, languages, files, commits, etc.
+Sema worked with a software automation lab on ML-powered refactoring suggestions; a code problem and code solution. Customers were very excited to try, but it was a ways from market-ready. Collections and a suggestion engine could be a trust building step between the current product and automated refactoring. Inputs from users would create rich training data and confidence in our suggestions relevance.
 
-This prototype didn't go any further, but built understanding on how users might wish to drill in and switch focal points, which was not possible in the current product.
+![Mobile prototype — building trust through suggestions and collections](/public/things/sema-collections/mobile-prototype-2.png)
 
-### Shared vision (~18 months in the role)
+The prototype introduced three big ideas; Leading with Technical Debt ($), organizing work with Collections, Reports
 
-We had consensus that a new product experience was needed to provide real value to busy software teams. This thinking was supported by close collaboration and discussions with the professional services, engineering and research teams.
+![The prototype introduced three big ideas: Leading with Technical Debt ($), organizing work with Collections, Reports](/public/things/sema-collections/prototype-three-big-ideas.png)
 
-Onboarding new Product Management and Design contractors was a chance to organize learnings into an outline of the underlying information architecture as I'd come to see it.
+Conversations about metrics, collections and progress towards goals could happen anywhere. A modern mobile-first approach challenges the assumption that developers would only use the desktop experience — prioritize a mobile-friendly approach.
 
-![Establishing parallels between code (projects → file) and people (teams → commit)](/public/things/sema-collections/shared-vision-ia.png)
+### Suggestions drive users to key actions
 
-Establishing parallels between code (projects → file) and people (teams → commit)
+- Suggesting tasks to improve software quality, process, or teams
+- Replicate the experience of Professional Services analyst, more scaleable
+- Smarter suggestions based on customer goals and priorities
+- Group bodies of work into suggested collections eg. "eliminate duplicate code" or "Reduce file complexity below 60"
 
-The two middle columns show the analogous hierarchy of projects and teams. The Project and Team layers would be an organizational layer created by users in our product, and not in the code itself. A repository can belong to multiple projects, just as contributors can belong to multiple teams.
+### Self-identified tech debt
 
-- Potential data within context is shown with yellow notes
-- Contextual report is described with teal notes
-- Contextual suggestions shown with pink notes
+Users would have the ability to add their own items to the collections, link files and even assign a value to it. There are lots of things teams considered technical debt that we may not think to quantify, would not be picked up by our analyses, or certain edge cases we haven't accommodated.
 
-## Final prototype
+The ability to add other items to a collection would open up the functionality of the platform to thinking forward, not just reacting to present states. Users could potentially use Collections to plan a major refactoring, or organize work to onboard a new hire familiarizing themselves with code.
 
-My last piece of work before departing from Sema was this prototype — the product I believed would get people excited and engaged with our offering.
+### Feedback Loop for Us
 
-![Striving for consistent layouts and patterns for an extensible front-end](/public/things/sema-collections/final-prototype.jpg)
+This system would allow us to understand the needs of our users in a whole new way. In use, Collections allow us to better understand the priorities and behavior of a customer, and further improve the value-added service from the Professional Services engagements. It also sets up a wealth of training data to help future automation & product development.
 
-Striving for consistent layouts and patterns for an extensible front-end
-
-I built this over a weekend tying together learning and ideas we had built towards into a single experience. I reused existing UI components wherever possible to save time.
-
-Because it builds from my experiences as both product manager and design leader, it is designed for development. It integrates the most promising research and engineering work and helps users to engage with technical debt in a way that's never been done before.
-
-### Home screen
-
-![The home screen should feel light, not overwhelming. Here users see their owned or assigned collections, projects and teams.](/public/things/sema-collections/home-screen.png)
-
-The home screen should feel light, not overwhelming. Here users see their owned or assigned collections, projects and teams.
-
-When a user logs in they create and navigate to Collections, Projects and Teams they're scoped to view. Progress on Collections is the unit of work users strive to move forward, and the at-a-glance indicator of success. From here users View Reports in the highest level context, comparing teams, projects and org-wide activity.
-
-### Build measurable units of work using Collections
-
-This is where users connect objectives to data in actionable lists. Items are suggested or added manually, and progress is automatically tracked in the back-end whenever possible.
-
-Collections could be used for planning, coaching, or taking note of items to look further into. By default they would be private, but can be shared with other users.
-
-![Collections overview tracks actionable items and objectives](/public/things/sema-collections/collections-overview.png)
-
-Collections overview tracks actionable items and objectives
-
-![Single collection detailed view displays all recent development activity related to collection items](/public/things/sema-collections/collections-named-sue.png)
-
-![Item detail menu where the type of objective, related file or folder, assignees and due dates are managed. Recent activity related to that objective is shown](/public/things/sema-collections/collections-task-expanded.png)
-
-### Logically organize code repos as Projects
-
-In software development what's considered a "project" often looks quite different from org to org. The Projects layer allows users to group multiple code repositories together and manage them in a way that makes sense to their process.
-
-When a new project is created it's given a name and assigned a color. Color is used to anchor context as users drill into data within the project. Users can also add a description to help their team understand what it's about.
-
-![Collections could be used for planning, coaching, or taking note of items to look further into. By default they would be private, but can be shared with other users.](/public/things/sema-collections/collections-detail.png)
-
-When users view a project, they get a high level overview of important insights, details and activities tied to it. As they drill in further to a repository or a folder within that repository, the data and insights displayed on the page adjust to that context.
-
-![Project screen. Here we could surface insights, high-level details and activity. Accessing reports from here would filter to the repositories, contributors and files tied to that project.](/public/things/sema-collections/project-overview.png)
-
-![Repository screen shows details about the repo and a familiar folder structure for exploring within it. Reports from here would show analytics about that repository (that's how the product works today)](/public/things/sema-collections/project-folder-drilldown.png)
-
-![File screen shows commit details and insights on the file over time. Issues or notes could be auto-tagged or manually tagged. These examples are things Professional Services might typically point out to clients.](/public/things/sema-collections/project-file-view.png)
-
-### Augment technical people management with Teams
-
-As a manager, I might be responsible for a developer who works on multiple projects and repositories in the org, some of which I don't oversee directly. People managers could use the platform to follow the efforts of their teams grouped in ways that weren't previously available; contractors, new hires, front-end. This was a challenge users often dealt with through internal knowledge of the team alone. With the code quality platform, that knowledge could be augmented and shared more easily with other managers and the teams.
-
-In order to maintain simple patterns for users, Teams and Projects share similar hierarchy and functionality. Allowing for granular drilldown on the data we have, users can look at developers, commits and code that had the greatest impact on the metrics.
-
-![Overview of Teams](/public/things/sema-collections/teams-overview.png)
-
-Overview of Teams
-
-![Profile of an individual contributor](/public/things/sema-collections/teams-contributor.png)
-
-![Detail view of a commit automatically tags file changes for any anomolies or significant details](/public/things/sema-collections/teams-commit.png)
-
-![A file change showing the actual line changes made](/public/things/sema-collections/teams-diff.png)
-
-### Reports give organizations data to build better software and teams
-
-All of the data and screens of the current web app could be condensed into a Report section powered by a third party BI tool. A list of available reports increases delivery and iteration since it allows product, professional services and research to ship new reports to select users without front-end changes.
-
-When a user selects 'View Reports' from any other context, they're taken to this space with available related reports and the contextual filters pre-applied. For example, when comparing duplication in the context of a project, they can see the repositories within that project compared to one another. Accessed from a repository context, the same report would compare files or folders within it.
-
-![A list of available reports. New custom reporting can be delivered to customers, including one off analyses or regular reporting prepared by professional services. A button to Order Report imagines an additional revenue stream; users connecting with professional services and purchasing one-off reporting outside of what is included in the contract.](/public/things/sema-collections/reports-list.png)
-
-A list of available reports. New custom reporting can be delivered to customers, including one off analyses or regular reporting prepared by professional services. A button to Order Report imagines an additional revenue stream; users connecting with professional services and purchasing one-off reporting outside of what is included in the contract.
-
-![This page holds a simple iFrame whitelabel embed from the BI tool. We implement filters on our own front end to maintain control of the inputs and learn from user behaviour.](/public/things/sema-collections/reports-chart.png)
+- What do users agree to act on (add to collection)? Do they fix it, and if so how?
+- What did users identify or add themselves? Can we detect, automate and offer that to others?
