@@ -3,6 +3,7 @@ title: Package Dependence Graphs
 description: Interactive package visualized for object-oriented code
 link: /things/package-dependence-graphs/
 date: 2019-07-01
+category: software
 tags: [things]
 layout: layouts/thing.njk
 ---

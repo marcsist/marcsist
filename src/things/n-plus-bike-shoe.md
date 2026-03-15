@@ -4,6 +4,7 @@ description: An additive-enabled performance cycling shoe product-service-system
 link: /things/n-plus-bike-shoe/
 externalLink: https://last.lesoriginal.com/n-plus-signup
 date: 2016-06-01
+category: goods
 tags: [things]
 layout: layouts/thing.njk
 chiptype: primary
