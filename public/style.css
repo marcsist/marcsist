@@ -235,6 +235,17 @@ nav .my-active-class a {
   color: var(--accent);
 }
 
+.back-home:link,
+.back-home:visited {
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.back-home:hover {
+  color: var(--accent);
+}
+
 /* Things section */
 .things-section {
   margin-top: 48px;
