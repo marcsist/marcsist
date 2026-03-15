@@ -46,6 +46,23 @@
     {% include 'layouts/blocks/footer.njk' %}
     <script src="/public/theme-switcher.js"></script>
     <script>
+      document.querySelectorAll('.things-list .thing-link').forEach(function(link) {
+        var desc = link.querySelector('.thing-desc');
+        if (!desc) return;
+        link.addEventListener('mouseenter', function() {
+          var overflow = desc.scrollWidth - desc.offsetWidth;
+          if (overflow > 0) {
+            desc.style.setProperty('--marquee-offset', '-' + overflow + 'px');
+            desc.style.setProperty('--marquee-duration', Math.max(2.5, overflow / 25) + 's');
+            desc.classList.add('is-overflowing');
+          }
+        });
+        link.addEventListener('mouseleave', function() {
+          desc.classList.remove('is-overflowing');
+        });
+      });
+    </script>
+    <script>
       window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
     </script>
     <script defer src="/_vercel/insights/script.js"></script>

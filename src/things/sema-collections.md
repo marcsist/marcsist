@@ -2,7 +2,8 @@
 title: Sema Code Quality Platform
 description: Redesigning an analytics platform to help organizations fight tech debt, one of the biggest drags on software development.
 link: /things/sema-collections/
-date: 2020-10-01
+date: 2019-11-01
+category: software
 tags: [things]
 layout: layouts/thing.njk
 chiptype: primary

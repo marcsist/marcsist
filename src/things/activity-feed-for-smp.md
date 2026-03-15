@@ -3,6 +3,7 @@ title: Activity Feed for SMP
 description: Extensible system for development activity updates
 link: /things/activity-feed-for-smp/
 date: 2019-09-01
+category: software
 tags: [things]
 layout: layouts/thing.njk
 ---

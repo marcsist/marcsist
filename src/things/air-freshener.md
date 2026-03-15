@@ -3,6 +3,7 @@ title: Air Freshener
 description: Classy car air fresheners from quality materials, designed for disassembly
 link: /things/air-freshener/
 date: 2017-04-01
+category: goods
 tags: [things]
 layout: layouts/thing.njk
 ---

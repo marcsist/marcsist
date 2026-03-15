@@ -322,6 +322,24 @@ nav .my-active-class a {
   visibility: visible;
 }
 
+.thing-desc-inner {
+  display: inline-block;
+}
+
+@keyframes marquee-scroll {
+  0%, 15%  { transform: translateX(0); }
+  75%, 90% { transform: translateX(var(--marquee-offset, 0px)); }
+  100%     { transform: translateX(0); }
+}
+
+.thing-desc.is-overflowing {
+  text-overflow: clip;
+}
+
+.thing-desc.is-overflowing .thing-desc-inner {
+  animation: marquee-scroll var(--marquee-duration, 4s) ease-in-out infinite;
+}
+
 /* Typography */
 p {
   margin: 0 0 0.75em 0;
