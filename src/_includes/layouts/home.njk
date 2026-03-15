@@ -31,7 +31,7 @@ templateClass: tmpl-home
             <a href="{{ post.data.link }}" class="thing-link">
               <span>{{ post.data.title }}</span>
               <span class="thing-desc">{{ post.data.description }}</span>
-              <span class="arrow">→</span>
+              <span class="arrow">{% if post.data.link and ('http' in post.data.link) %}↗{% else %}→{% endif %}</span>
             </a>
           </div>
           {%- endif -%}
