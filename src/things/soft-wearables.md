@@ -2,7 +2,7 @@
 title: Soft Wearables
 description: Shirt and sensors detect posture and movement through a threadlike sensor
 link: /things/soft-wearables/
-date: 2018-06-01
+date: 2018-03-01
 category: goods
 tags: [things]
 layout: layouts/thing.njk
