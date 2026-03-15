@@ -11,9 +11,11 @@ templateClass: tmpl-home
 
       <h1 class='postTitle'>{{title}}</h1>
       <p>{{description}}</p>
+      {% if externalLink %}
         <h3>
-        <a href="{{link}}">link-></a>
-      </h3>
+          <a href="{{externalLink}}">link-></a>
+        </h3>
+      {% endif %}
     </section>
     
     {{ content | safe }}

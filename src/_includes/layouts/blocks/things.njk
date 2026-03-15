@@ -1,16 +1,11 @@
 <section class="things-section">
   <div class="section-label">// things</div>
 
-  <div class="filter-tabs">
-    <button class="active" onclick="filterThings('all')">all</button>
-    <button onclick="filterThings('new')">new</button>
-  </div>
-
   <div class="things-list">
     {%- for post in collections.things | reverse -%}
-    <div class="thing-item" data-status="{{ post.data.status | lower if post.data.status else '' }}">
+    <div class="thing-item">
       <a href="{{ post.data.link }}" class="thing-link">
-        <span>{{ post.data.title }}{% if post.data.status %}<span class="status">{{ post.data.status }}</span>{% endif %}</span>
+        <span>{{ post.data.title }}</span>
         <span class="thing-desc">{{ post.data.description }}</span>
         <span class="arrow">→</span>
       </a>
@@ -18,23 +13,3 @@
     {%- endfor -%}
   </div>
 </section>
-
-<script>
-function filterThings(filter) {
-  const items = document.querySelectorAll('.thing-item');
-  const buttons = document.querySelectorAll('.filter-tabs button');
-
-  buttons.forEach(btn => {
-    btn.classList.toggle('active', btn.textContent.trim() === filter);
-  });
-
-  items.forEach(item => {
-    if (filter === 'all') {
-      item.style.display = '';
-    } else {
-      const status = item.dataset.status;
-      item.style.display = status === 'new' ? '' : 'none';
-    }
-  });
-}
-</script>
