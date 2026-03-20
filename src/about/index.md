@@ -26,3 +26,5 @@ I've been building up and riding bikes since I was a kid. I pop into bike shops 
 Hiking, biking, camping and skiing are how I stretch my legs. I travel to experience natural beauty and the fruits of human creativity. My last big move was across Canada for a fellowship, and now I'm in Germany.
 
 If you've read this far, [drop me a line](mailto:sup+marcsist@marcsist.com)
+
+<div class="view-all"><a href="/about/resume/">view resume →</a></div>

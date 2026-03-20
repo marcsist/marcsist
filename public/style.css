@@ -796,6 +796,70 @@ footer a:hover {
   border-color: var(--accent);
 }
 
+/* Resume */
+.resume-section {
+  margin-top: 40px;
+}
+
+.resume-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.resume-list > li {
+  display: flex;
+  align-items: baseline;
+  gap: 24px;
+  padding: 10px 0;
+  margin-bottom: 0;
+}
+
+.resume-date {
+  color: var(--muted);
+  font-size: 12px;
+  white-space: nowrap;
+  min-width: 110px;
+}
+
+.resume-entry {
+  flex: 1;
+}
+
+.resume-entry strong {
+  font-weight: 600;
+}
+
+.resume-entry a:link,
+.resume-entry a:visited {
+  color: var(--fg);
+  font-weight: 600;
+}
+
+.resume-entry a:hover {
+  color: var(--accent);
+}
+
+.resume-entry .arrow {
+  color: var(--muted);
+  font-size: 12px;
+}
+
+.resume-entry a:hover .arrow {
+  color: var(--accent);
+}
+
+.resume-org {
+  display: block;
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.resume-links .thing-item {
+  padding: 6px 0;
+}
+
 /* Responsive */
 @media screen and (max-width: 480px) {
   body {
@@ -822,5 +886,14 @@ footer a:hover {
 
   .things-list .thing-desc {
     display: none;
+  }
+
+  .resume-list > li {
+    flex-direction: column;
+    gap: 2px;
+  }
+
+  .resume-date {
+    min-width: unset;
   }
 }

@@ -1,0 +1,12 @@
+---
+layout: layouts/base.njk
+templateClass: tmpl-resume
+---
+
+<div class="wrapper post">
+  <div>
+    {% include 'layouts/blocks/breadcrumbs.njk' %}
+
+    {{ content | safe }}
+  </div>
+</div>
