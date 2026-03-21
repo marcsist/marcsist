@@ -856,6 +856,16 @@ footer a:hover {
   font-weight: 400;
 }
 
+.resume-desc {
+  display: block;
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 400;
+  margin-top: 2px;
+  max-width: 480px;
+  line-height: 1.6;
+}
+
 .resume-links .thing-item {
   padding: 6px 0;
 }

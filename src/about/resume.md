@@ -15,31 +15,50 @@ eleventyNavigation:
   <div class="section-label">// experience</div>
   <ul class="resume-list">
     <li>
-      <span class="resume-date">2021 — Now</span>
+      <span class="resume-date">2026 — Now</span>
       <div class="resume-entry">
-        <a href="https://www.rasa.com/"><strong>Director, Product Design at Rasa</strong> <span class="arrow">↗</span></a>
+        <a href="https://www.rasa.com/"><strong>Director of Product Design at Rasa</strong> <span class="arrow">↗</span></a>
+        <span class="resume-org">Berlin, Germany · Remote</span>
+      </div>
+    </li>
+    <li>
+      <span class="resume-date">2023 — 2026</span>
+      <div class="resume-entry">
+        <a href="https://www.phrase.com/"><strong>Director, Product Design at Phrase</strong> <span class="arrow">↗</span></a>
+        <span class="resume-org">Hamburg, Germany · Hybrid</span>
+        <span class="resume-desc">Led product design across a localization SaaS suite — UI, design system, user research, and content design. Kept products relevant, AI-driven and user-centric.</span>
+      </div>
+    </li>
+    <li>
+      <span class="resume-date">2021 — 2023</span>
+      <div class="resume-entry">
+        <strong>Product Design Lead at Phrase</strong>
+        <span class="resume-org">Hamburg, Germany · Hybrid</span>
+        <span class="resume-desc">Aligned two legacy products under a shared design language. Introduced a combined product suite experience. Doubled design headcount.</span>
+      </div>
+    </li>
+    <li>
+      <span class="resume-date">2021</span>
+      <div class="resume-entry">
+        <strong>Product Designer at Phrase</strong>
         <span class="resume-org">Hamburg, Germany</span>
+        <span class="resume-desc">Rebuilt the core String Editor from the ground up. Established a research insights database. Co-developed the Syntax Design System.</span>
       </div>
     </li>
     <li>
-      <span class="resume-date">2018 — 2021</span>
+      <span class="resume-date">2018 — 2020</span>
       <div class="resume-entry">
-        <strong>Senior Product Designer at Rasa</strong>
-        <span class="resume-org">Hamburg, Germany</span>
+        <strong>Product Designer & PM at Sema</strong>
+        <span class="resume-org">Halifax, Canada · Remote</span>
+        <span class="resume-desc">Design and product management for a code quality analytics platform. Design system, in-product analytics, and BI reporting for Fortune 500 customers.</span>
       </div>
     </li>
     <li>
-      <span class="resume-date">2015 — 2018</span>
+      <span class="resume-date">2016 — 2020</span>
       <div class="resume-entry">
-        <strong>Product Designer</strong>
-        <span class="resume-org">Previous Role</span>
-      </div>
-    </li>
-    <li>
-      <span class="resume-date">2012 — 2015</span>
-      <div class="resume-entry">
-        <strong>UX Designer</strong>
-        <span class="resume-org">Previous Role</span>
+        <strong>Freelance Product Designer, BIEM ETC.</strong>
+        <span class="resume-org">Dartmouth, Nova Scotia</span>
+        <span class="resume-desc">Independent practice spanning digital product &amp; UX design, technical soft goods, wearable tech, and industrial design.</span>
       </div>
     </li>
   </ul>
@@ -66,20 +85,14 @@ eleventyNavigation:
 </section>
 
 <section class="resume-section">
-  <div class="section-label">// education</div>
+  <div class="section-label">// recognition</div>
   <ul class="resume-list">
     <li>
-      <span class="resume-date">2010 — 2012</span>
+      <span class="resume-date">2017 — 2020</span>
       <div class="resume-entry">
-        <strong>Fellowship</strong>
+        <a href="https://ventureforcanada.ca/"><strong>Venture for Canada Fellow</strong> <span class="arrow">↗</span></a>
         <span class="resume-org">Canada</span>
-      </div>
-    </li>
-    <li>
-      <span class="resume-date">2006 — 2010</span>
-      <div class="resume-entry">
-        <strong>Design Degree</strong>
-        <span class="resume-org">University</span>
+        <span class="resume-desc">Fellowship supporting entrepreneurship and talent in Canadian startups.</span>
       </div>
     </li>
   </ul>
@@ -99,6 +112,13 @@ eleventyNavigation:
       <a href="https://github.com/marcsist" class="thing-link">
         <span>GitHub</span>
         <span class="thing-desc">marcsist</span>
+        <span class="arrow">↗</span>
+      </a>
+    </div>
+    <div class="thing-item">
+      <a href="https://www.linkedin.com/in/marcs-wilkinson/" class="thing-link">
+        <span>LinkedIn</span>
+        <span class="thing-desc">marcs-wilkinson</span>
         <span class="arrow">↗</span>
       </a>
     </div>
