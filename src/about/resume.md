@@ -99,6 +99,34 @@ eleventyNavigation:
 </section>
 
 <section class="resume-section">
+  <div class="section-label">// education</div>
+  <ul class="resume-list">
+    <li>
+      <span class="resume-date">2013 — 2017</span>
+      <div class="resume-entry">
+        <strong>Bachelor of Design, Product</strong>
+        <span class="resume-org">The Wilson School of Design at Kwantlen Polytechnic University</span>
+        <span class="resume-desc">Product Design Student Rep. HACKADAY Prize finalist for N+ platform — an open-source modular bike shoe with additive-enabled design.</span>
+      </div>
+    </li>
+    <li>
+      <span class="resume-date">2015</span>
+      <div class="resume-entry">
+        <strong>Exchange Semester, Industrial Design</strong>
+        <span class="resume-org">University of Applied Sciences and Arts Northwestern Switzerland FHNW</span>
+      </div>
+    </li>
+    <li>
+      <span class="resume-date">2008 — 2010</span>
+      <div class="resume-entry">
+        <strong>Diploma, Business Administration</strong>
+        <span class="resume-org">Camosun College</span>
+      </div>
+    </li>
+  </ul>
+</section>
+
+<section class="resume-section">
   <div class="section-label">// elsewhere</div>
   <div class="things-list resume-links">
     <div class="thing-item">
